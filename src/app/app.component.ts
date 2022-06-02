@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'myrtex-ui';
+
+  selectedPeople = [{ id: 2, name: 'third option' }];
+
+  people$: any[] = [
+    { id: 0, name: 'first option' },
+    { id: 1, name: 'second option' },
+    { id: 2, name: 'third option' },
+    { id: 3, name: 'fourth option' },
+  ];
+
 }
