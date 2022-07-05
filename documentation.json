@@ -248,13 +248,13 @@
     "modules": [
         {
             "name": "AppModule",
-            "id": "module-AppModule-e16eacca1915460f101eb94f7206d51c7b8631df408658553b3f5acc4abf708351b0944f12220fa7d8986788b822973e2bd9e31bd331d407908319ba89ea7a79",
+            "id": "module-AppModule-fd31ea498ffe6fc7622e2a2d1eb821e1552885e32970ba4f7ef4fc79639853de35a2ba2036f722cec1b0ac58552f2693645724ade2aac51f78929e7f6179e5d3",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "src/app/app.module.ts",
             "methods": [],
-            "sourceCode": "import { NgModule } from '@angular/core';\nimport { BrowserModule } from '@angular/platform-browser';\n\nimport { AppRoutingModule } from './app-routing.module';\nimport { AppComponent } from './app.component';\nimport { ButtonModule, CheckboxModule, DatetimeInputModule, InputModule, InputWithLabelModule, SelectModule } from \"myrtex-lib\";\nimport { FormsModule } from \"@angular/forms\";\n\n@NgModule({\n  declarations: [\n    AppComponent,\n  ],\n  imports: [\n    FormsModule,\n    BrowserModule,\n    AppRoutingModule,\n    ButtonModule,\n    InputModule,\n    CheckboxModule,\n    DatetimeInputModule,\n    InputWithLabelModule,\n    SelectModule\n  ],\n  providers: [],\n  bootstrap: [AppComponent]\n})\nexport class AppModule { }\n",
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { BrowserModule } from '@angular/platform-browser';\n\nimport { AppRoutingModule } from './app-routing.module';\nimport { AppComponent } from './app.component';\nimport { ButtonModule, InputCheckboxModule, InputDatetimeModule, InputModule, InputWithLabelModule, InputSelectModule } from \"myrtex-lib\";\nimport { FormsModule } from \"@angular/forms\";\n\n@NgModule({\n  declarations: [\n    AppComponent,\n  ],\n  imports: [\n    FormsModule,\n    BrowserModule,\n    AppRoutingModule,\n    ButtonModule,\n    InputModule,\n    InputCheckboxModule,\n    InputDatetimeModule,\n    InputWithLabelModule,\n    InputSelectModule\n  ],\n  providers: [],\n  bootstrap: [AppComponent]\n})\nexport class AppModule { }\n",
             "children": [
                 {
                     "type": "providers",
@@ -347,7 +347,7 @@
                 "name": "Checkbox",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/Checkbox.stories.ts",
+                "file": "src/stories/form/input-checkbox/Checkbox.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -364,24 +364,24 @@
                 "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
             },
             {
-                "name": "DefaultSelect",
+                "name": "Datetime",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/form/select/Select.stories.ts",
+                "file": "src/stories/form/input-datetime/Datetime.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
                 "defaultValue": "Template.bind({})"
             },
             {
-                "name": "environment",
+                "name": "DefaultSelect",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/environments/environment.prod.ts",
+                "file": "src/stories/form/input-select/Select.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "object",
-                "defaultValue": "{\n  production: true\n}"
+                "type": "",
+                "defaultValue": "Template.bind({})"
             },
             {
                 "name": "environment",
@@ -392,6 +392,16 @@
                 "deprecationMessage": "",
                 "type": "object",
                 "defaultValue": "{\n  production: false\n}"
+            },
+            {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/environments/environment.prod.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n  production: true\n}"
             },
             {
                 "name": "Input",
@@ -467,7 +477,7 @@
                 "name": "MultipleSelect",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/form/select/MultipleSelect.stories.ts",
+                "file": "src/stories/form/input-multy-select/MultipleSelect.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -516,16 +526,6 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/Checkbox.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<CheckboxComponent>",
-                "defaultValue": "(args: CheckboxComponent) => ({\r\n  props: args,\r\n  template: `<mrx-checkbox placeholder=\"${args.placeholder}\" label=\"${args.label}\"></mrx-checkbox>`\r\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/stories/Input.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -556,21 +556,51 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/form/select/MultipleSelect.stories.ts",
+                "file": "src/stories/form/input-multy-select/MultipleSelect.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Story<SelectComponent>",
-                "defaultValue": "(args: SelectComponent) => ({\r\n  props: {\r\n    ...args\r\n  },\r\n  template: `<mrx-select\r\n              [(ngModel)]=\"selectedItems\"\r\n              (changed)=\"changed\"\r\n              label=\"${args.label}\"\r\n              [items]=\"items\"\r\n              bindLabel=\"${args.bindLabel}\"\r\n              [multiple]=\"${args.multiple}\"\r\n            ></mrx-select>`,\r\n})"
+                "type": "Story<InputSelectComponent>",
+                "defaultValue": "(args: InputSelectComponent) => ({\r\n  props: {\r\n    ...args\r\n  },\r\n  template: `<mrx-input-select\r\n                [(ngModel)]=\"selected\"\r\n                (changed)=\"changed\"\r\n                label=\"${args.label}\"\r\n                [items]=\"items\"\r\n                bindLabel=\"${args.bindLabel}\"\r\n                bindValue=\"${args.bindValue}\"\r\n                [multiple]=\"true\"\r\n                [disabled]=\"${args.disabled}\"\r\n                [disabledFromDisplay]=\"${args.disabledFromDisplay}\"\r\n                [isBottomLabel]=\"${args.isBottomLabel}\"\r\n            ></mrx-input-select>`,\r\n})"
             },
             {
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/form/select/Select.stories.ts",
+                "file": "src/stories/form/input-select/Select.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Story<SelectComponent>",
-                "defaultValue": "(args: SelectComponent) => ({\r\n  props: args,\r\n  template: `<mrx-select\r\n                [(ngModel)]=\"selectedItems\"\r\n                label=\"${args.label}\"\r\n                [items]=\"items\"\r\n                bindLabel=\"${args.bindLabel}\"\r\n              ></mrx-select>`,\r\n})"
+                "type": "Story<InputSelectComponent>",
+                "defaultValue": "(args: InputSelectComponent) => ({\r\n  props: args,\r\n  template: `<mrx-input-select\r\n                [(ngModel)]=\"selected\"\r\n                label=\"${args.label}\"\r\n                [items]=\"items\"\r\n                bindLabel=\"${args.bindLabel}\"\r\n                bindValue=\"${args.bindValue}\"\r\n                [multiple]=\"false\"\r\n                [disabled]=\"${args.disabled}\"\r\n                [disabledFromDisplay]=\"${args.disabledFromDisplay}\"\r\n                [isBottomLabel]=\"${args.isBottomLabel}\"\r\n              ></mrx-input-select>\r\n`,\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/form/input-datetime/Datetime.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<InputDatetimeComponent>",
+                "defaultValue": "(args: InputDatetimeComponent) => ({\r\n  props: args,\r\n  template: `<mrx-input-datetime\r\n                (changed)=\"changed\"\r\n\r\n                dateFormat=\"${args.dateFormat}\"\r\n                timeFormat=\"${args.timeFormat}\"\r\n                startDate=\"${args.startDate}\"\r\n                minDate=\"${args.minDate}\"\r\n                maxDate=\"${args.maxDate}\"\r\n                [timepicker]=\"${args.timepicker}\"\r\n                [rangeMode]=\"${args.rangeMode}\"\r\n                \r\n                size=\"${args.size}\"\r\n                container=\"${args.container}\"\r\n                customClasses=\"${args.customClasses}\"\r\n                placeholder=\"${args.placeholder}\"\r\n                name=\"${args.name}\"\r\n                mask=\"${args.mask}\"\r\n                [required]=\"${args.required}\"\r\n                [disabled]=\"${args.disabled}\"\r\n                \r\n                label=\"${args.label}\"\r\n                tooltip=\"${args.tooltip}\"\r\n                [isBottomLabel]=\"${args.isBottomLabel}\"\r\n             ></mrx-input-datetime>`\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/form/input-checkbox/Checkbox.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<InputCheckboxComponent>",
+                "defaultValue": "(args: InputCheckboxComponent) => ({\r\n  props: args,\r\n  template: `<mrx-input-checkbox placeholder=\"${args.placeholder}\" label=\"${args.label}\" tooltip=\"${args.tooltip}\"></mrx-input-checkbox>`\r\n})"
+            },
+            {
+                "name": "themesObj",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/assets/themes/index.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\r\n    default: 'default',\r\n    list: [\r\n        { name: 'default', class: ['page-wrapper', 'default-theme'], color: '#00aced' },\r\n        { name: 'red', class: ['page-wrapper', 'red-theme'], color: 'red' },\r\n    ],\r\n}"
             }
         ],
         "functions": [],
@@ -599,12 +629,12 @@
                     "defaultValue": "(args: ButtonComponent) => ({\r\n  props: args,\r\n  template: `<mrx-button\r\n                size=\"${args.size}\"\r\n                label=\"${args.label}\"\r\n                color=\"${args.color}\"\r\n                [outline]=\"${args.outline}\"\r\n                [iconOnly]=\"${args.iconOnly}\"\r\n             >Click</mrx-button>`\r\n})"
                 }
             ],
-            "src/stories/Checkbox.stories.ts": [
+            "src/stories/form/input-checkbox/Checkbox.stories.ts": [
                 {
                     "name": "Checkbox",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/stories/Checkbox.stories.ts",
+                    "file": "src/stories/form/input-checkbox/Checkbox.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
@@ -614,11 +644,11 @@
                     "name": "Template",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/stories/Checkbox.stories.ts",
+                    "file": "src/stories/form/input-checkbox/Checkbox.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "type": "Story<CheckboxComponent>",
-                    "defaultValue": "(args: CheckboxComponent) => ({\r\n  props: args,\r\n  template: `<mrx-checkbox placeholder=\"${args.placeholder}\" label=\"${args.label}\"></mrx-checkbox>`\r\n})"
+                    "type": "Story<InputCheckboxComponent>",
+                    "defaultValue": "(args: InputCheckboxComponent) => ({\r\n  props: args,\r\n  template: `<mrx-input-checkbox placeholder=\"${args.placeholder}\" label=\"${args.label}\" tooltip=\"${args.tooltip}\"></mrx-input-checkbox>`\r\n})"
                 }
             ],
             "src/test.ts": [
@@ -642,12 +672,12 @@
                     "type": "literal type"
                 }
             ],
-            "src/stories/form/select/Select.stories.ts": [
+            "src/stories/form/input-datetime/Datetime.stories.ts": [
                 {
-                    "name": "DefaultSelect",
+                    "name": "Datetime",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/stories/form/select/Select.stories.ts",
+                    "file": "src/stories/form/input-datetime/Datetime.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
@@ -657,23 +687,33 @@
                     "name": "Template",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/stories/form/select/Select.stories.ts",
+                    "file": "src/stories/form/input-datetime/Datetime.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "type": "Story<SelectComponent>",
-                    "defaultValue": "(args: SelectComponent) => ({\r\n  props: args,\r\n  template: `<mrx-select\r\n                [(ngModel)]=\"selectedItems\"\r\n                label=\"${args.label}\"\r\n                [items]=\"items\"\r\n                bindLabel=\"${args.bindLabel}\"\r\n              ></mrx-select>`,\r\n})"
+                    "type": "Story<InputDatetimeComponent>",
+                    "defaultValue": "(args: InputDatetimeComponent) => ({\r\n  props: args,\r\n  template: `<mrx-input-datetime\r\n                (changed)=\"changed\"\r\n\r\n                dateFormat=\"${args.dateFormat}\"\r\n                timeFormat=\"${args.timeFormat}\"\r\n                startDate=\"${args.startDate}\"\r\n                minDate=\"${args.minDate}\"\r\n                maxDate=\"${args.maxDate}\"\r\n                [timepicker]=\"${args.timepicker}\"\r\n                [rangeMode]=\"${args.rangeMode}\"\r\n                \r\n                size=\"${args.size}\"\r\n                container=\"${args.container}\"\r\n                customClasses=\"${args.customClasses}\"\r\n                placeholder=\"${args.placeholder}\"\r\n                name=\"${args.name}\"\r\n                mask=\"${args.mask}\"\r\n                [required]=\"${args.required}\"\r\n                [disabled]=\"${args.disabled}\"\r\n                \r\n                label=\"${args.label}\"\r\n                tooltip=\"${args.tooltip}\"\r\n                [isBottomLabel]=\"${args.isBottomLabel}\"\r\n             ></mrx-input-datetime>`\r\n})"
                 }
             ],
-            "src/environments/environment.prod.ts": [
+            "src/stories/form/input-select/Select.stories.ts": [
                 {
-                    "name": "environment",
+                    "name": "DefaultSelect",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/environments/environment.prod.ts",
+                    "file": "src/stories/form/input-select/Select.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "type": "object",
-                    "defaultValue": "{\n  production: true\n}"
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/form/input-select/Select.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<InputSelectComponent>",
+                    "defaultValue": "(args: InputSelectComponent) => ({\r\n  props: args,\r\n  template: `<mrx-input-select\r\n                [(ngModel)]=\"selected\"\r\n                label=\"${args.label}\"\r\n                [items]=\"items\"\r\n                bindLabel=\"${args.bindLabel}\"\r\n                bindValue=\"${args.bindValue}\"\r\n                [multiple]=\"false\"\r\n                [disabled]=\"${args.disabled}\"\r\n                [disabledFromDisplay]=\"${args.disabledFromDisplay}\"\r\n                [isBottomLabel]=\"${args.isBottomLabel}\"\r\n              ></mrx-input-select>\r\n`,\r\n})"
                 }
             ],
             "src/environments/environment.ts": [
@@ -686,6 +726,18 @@
                     "deprecationMessage": "",
                     "type": "object",
                     "defaultValue": "{\n  production: false\n}"
+                }
+            ],
+            "src/environments/environment.prod.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/environments/environment.prod.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n  production: true\n}"
                 }
             ],
             "src/stories/Input.stories.ts": [
@@ -818,12 +870,12 @@
                     "defaultValue": "(args: Page) => ({\n  props: args,\n})"
                 }
             ],
-            "src/stories/form/select/MultipleSelect.stories.ts": [
+            "src/stories/form/input-multy-select/MultipleSelect.stories.ts": [
                 {
                     "name": "MultipleSelect",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/stories/form/select/MultipleSelect.stories.ts",
+                    "file": "src/stories/form/input-multy-select/MultipleSelect.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
@@ -833,11 +885,23 @@
                     "name": "Template",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/stories/form/select/MultipleSelect.stories.ts",
+                    "file": "src/stories/form/input-multy-select/MultipleSelect.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "type": "Story<SelectComponent>",
-                    "defaultValue": "(args: SelectComponent) => ({\r\n  props: {\r\n    ...args\r\n  },\r\n  template: `<mrx-select\r\n              [(ngModel)]=\"selectedItems\"\r\n              (changed)=\"changed\"\r\n              label=\"${args.label}\"\r\n              [items]=\"items\"\r\n              bindLabel=\"${args.bindLabel}\"\r\n              [multiple]=\"${args.multiple}\"\r\n            ></mrx-select>`,\r\n})"
+                    "type": "Story<InputSelectComponent>",
+                    "defaultValue": "(args: InputSelectComponent) => ({\r\n  props: {\r\n    ...args\r\n  },\r\n  template: `<mrx-input-select\r\n                [(ngModel)]=\"selected\"\r\n                (changed)=\"changed\"\r\n                label=\"${args.label}\"\r\n                [items]=\"items\"\r\n                bindLabel=\"${args.bindLabel}\"\r\n                bindValue=\"${args.bindValue}\"\r\n                [multiple]=\"true\"\r\n                [disabled]=\"${args.disabled}\"\r\n                [disabledFromDisplay]=\"${args.disabledFromDisplay}\"\r\n                [isBottomLabel]=\"${args.isBottomLabel}\"\r\n            ></mrx-input-select>`,\r\n})"
+                }
+            ],
+            "src/assets/themes/index.ts": [
+                {
+                    "name": "themesObj",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/assets/themes/index.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\r\n    default: 'default',\r\n    list: [\r\n        { name: 'default', class: ['page-wrapper', 'default-theme'], color: '#00aced' },\r\n        { name: 'red', class: ['page-wrapper', 'red-theme'], color: 'red' },\r\n    ],\r\n}"
                 }
             ]
         },
@@ -873,6 +937,16 @@
                 "status": "low"
             },
             {
+                "filePath": "src/assets/themes/index.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "themesObj",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
                 "filePath": "src/environments/environment.prod.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
@@ -904,26 +978,6 @@
             },
             {
                 "filePath": "src/stories/Button.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Template",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/Checkbox.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Checkbox",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/Checkbox.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -993,17 +1047,17 @@
                 "status": "low"
             },
             {
-                "filePath": "src/stories/form/select/MultipleSelect.stories.ts",
+                "filePath": "src/stories/form/input-checkbox/Checkbox.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
-                "name": "MultipleSelect",
+                "name": "Checkbox",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
             },
             {
-                "filePath": "src/stories/form/select/MultipleSelect.stories.ts",
+                "filePath": "src/stories/form/input-checkbox/Checkbox.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -1013,7 +1067,47 @@
                 "status": "low"
             },
             {
-                "filePath": "src/stories/form/select/Select.stories.ts",
+                "filePath": "src/stories/form/input-datetime/Datetime.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Datetime",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/form/input-datetime/Datetime.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/form/input-multy-select/MultipleSelect.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "MultipleSelect",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/form/input-multy-select/MultipleSelect.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/form/input-select/Select.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -1023,7 +1117,7 @@
                 "status": "low"
             },
             {
-                "filePath": "src/stories/form/select/Select.stories.ts",
+                "filePath": "src/stories/form/input-select/Select.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",

@@ -1,17 +1,20 @@
 import { Meta, Story } from "@storybook/angular/types-6-0";
 import { componentWrapperDecorator, moduleMetadata } from "@storybook/angular";
 import { ButtonComponent, ButtonModule } from "myrtex-lib";
+import themes from './themes'
 
 export default {
   title: 'Components/Button',
   component: ButtonComponent,
   name: 'Button',
+  parameters: {
+    themes: themes,
+  },
   decorators: [
     moduleMetadata({
       declarations: [],
       imports: [ButtonModule],
     }),
-    componentWrapperDecorator((story) => ` <div class="page-wrapper  default-theme">${story}</div>`)
   ],
   argTypes: {
     size: {

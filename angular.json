@@ -44,7 +44,11 @@
               "node_modules/ros.grant.common/Shared/Styles/Modules/Input/Checkbox.less",
               "node_modules/ros.grant.common/Shared/Styles/Modules/Input/Switch.less",
               "node_modules/ros.grant.common/Shared/Styles/Modules/Input/CustomNg-Select.less",
-              "node_modules/ros.grant.common/Shared/Styles/Modules/Input/inputbox.less"
+              "node_modules/ros.grant.common/Shared/Styles/Modules/Input/inputbox.less",
+              "node_modules/ros.grant.common/Shared/Styles/Modules/Input/CustomInput.less",
+              "node_modules/ros.grant.common/Shared/Styles/Modules/Tooltip.less",
+              "node_modules/ros.grant.common/Shared/Styles/Modules/СustomTooltip.less",
+              "node_modules/air-datepicker/air-datepicker.css"
             ],
             "scripts": []
           },

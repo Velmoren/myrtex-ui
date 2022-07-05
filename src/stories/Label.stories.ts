@@ -3,7 +3,7 @@ import { componentWrapperDecorator, moduleMetadata } from "@storybook/angular";
 import { InputComponent, InputModule, LabelComponent, LabelModule } from "myrtex-lib";
 
 export default {
-  title: 'Form/Label',
+  title: 'Components/Form/Label',
   component: LabelComponent,
   name: 'Label',
   decorators: [

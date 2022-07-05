@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ButtonModule, CheckboxModule, DatetimeInputModule, InputModule, InputWithLabelModule, SelectModule } from "myrtex-lib";
+import { ButtonModule, InputCheckboxModule, InputDatetimeModule, InputModule, InputWithLabelModule, InputSelectModule } from "myrtex-lib";
 import { FormsModule } from "@angular/forms";
 
 @NgModule({
@@ -16,10 +16,10 @@ import { FormsModule } from "@angular/forms";
     AppRoutingModule,
     ButtonModule,
     InputModule,
-    CheckboxModule,
-    DatetimeInputModule,
+    InputCheckboxModule,
+    InputDatetimeModule,
     InputWithLabelModule,
-    SelectModule
+    InputSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]
