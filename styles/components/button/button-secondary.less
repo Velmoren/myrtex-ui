@@ -1,0 +1,79 @@
+.mrx-btn-secondary {
+  background-color: transparent;
+  border: 1px solid var(--Main2);
+  color: var(--Main2);
+
+  svg {
+    &.fill {
+      path {
+        fill: var(--Main2);
+      }
+
+      circle {
+        fill: var(--Main2);
+      }
+
+      &-rect {
+        rect {
+          fill: var(--Main2);
+        }
+      }
+    }
+
+    &.stroke {
+      path {
+        stroke: var(--Main2);
+      }
+
+      circle {
+        stroke: var(--Main2);
+      }
+
+      &-rect {
+        rect {
+          stroke: var(--Main2);
+        }
+      }
+    }
+  }
+
+  &:hover, &.active  {
+    background-color: var(--Subsidiary);
+    color: var(--White);
+    border-color: var(--Subsidiary);
+
+    svg {
+      &.fill {
+        path {
+          fill: var(--White);
+        }
+
+        circle {
+          fill: var(--White);
+        }
+
+        &-rect {
+          rect {
+            fill: var(--White);
+          }
+        }
+      }
+
+      &.stroke {
+        path {
+          stroke: var(--White);
+        }
+
+        circle {
+          stroke: var(--White);
+        }
+
+        &-rect {
+          rect {
+            stroke: var(--White);
+          }
+        }
+      }
+    }
+  }
+}

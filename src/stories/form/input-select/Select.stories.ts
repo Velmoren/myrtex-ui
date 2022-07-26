@@ -2,7 +2,6 @@ import { Meta, Story } from "@storybook/angular/types-6-0";
 import { componentWrapperDecorator, moduleMetadata } from "@storybook/angular";
 import { InputSelectModule, InputSelectComponent } from "myrtex-lib";
 import { FormsModule } from "@angular/forms";
-import { withKnobs } from "@storybook/addon-knobs";
 
 export default {
   title: 'FORM/Select',
@@ -37,6 +36,7 @@ const Template: Story<InputSelectComponent> = (args: InputSelectComponent) => ({
   props: args,
   template: `<mrx-input-select
                 [(ngModel)]="selected"
+                (changed)="onChange"
                 label="${args.label}"
                 [items]="items"
                 bindLabel="${args.bindLabel}"

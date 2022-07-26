@@ -1,0 +1,54 @@
+// disabled нкнопка
+.mrx-btn {
+  &.disabled,
+  &:disabled,
+  &[disabled="disabled"],
+  &[disabled] {
+    color: var(--Secondary) !important;
+    cursor: default;
+
+    svg {
+      &.fill {
+        path {
+          fill: var(--Secondary) !important;
+        }
+
+        circle {
+          fill: var(--Secondary) !important;
+        }
+
+        &-rect {
+          rect {
+            fill: var(--Secondary) !important;
+          }
+        }
+      }
+
+      &.stroke {
+        path {
+          stroke: var(--Secondary) !important;
+        }
+
+        circle {
+          stroke: var(--Secondary) !important;
+        }
+
+        &-rect {
+          rect {
+            stroke: var(--Secondary) !important;
+          }
+        }
+      }
+    }
+  }
+
+  &.mrx-btn-primary, &.mrx-btn-secondary {
+    &.disabled,
+    &:disabled,
+    &[disabled="disabled"],
+    &[disabled] {
+      background-color: var(--Disabled) !important;
+      border-color: var(--Disabled) !important;
+    }
+  }
+}

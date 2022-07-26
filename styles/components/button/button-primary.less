@@ -1,0 +1,44 @@
+.mrx-btn-primary {
+  border: 1px solid var(--Main2);
+  color: var(--White);
+  background-color: var(--Main2);
+
+  &:hover, &.active  {
+    background-color: var(--Subsidiary);
+    border-color: var(--Subsidiary);
+  }
+
+  svg {
+    &.fill {
+      path {
+        fill: var(--White);
+      }
+
+      circle {
+        fill: var(--White);
+      }
+
+      &-rect {
+        rect {
+          fill: var(--White);
+        }
+      }
+    }
+
+    &.stroke {
+      path {
+        stroke: var(--White);
+      }
+
+      circle {
+        stroke: var(--White);
+      }
+
+      &-rect {
+        rect {
+          stroke: #fff;
+        }
+      }
+    }
+  }
+}

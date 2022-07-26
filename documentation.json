@@ -334,14 +334,24 @@
     "miscellaneous": {
         "variables": [
             {
-                "name": "Button",
+                "name": "Active",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/Button.stories.ts",
+                "file": "src/stories/old/Buttons1/AllButton.stories1.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
+                "type": "Story<ButtonComponent>",
+                "defaultValue": "(args: ButtonComponent) => ({\r\n  props: {\r\n    active: true,\r\n    label: 'Active'\r\n  },\r\n})"
+            },
+            {
+                "name": "Blue",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/old/Buttons1/AllButton.stories1.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<ButtonComponent>",
+                "defaultValue": "(args: ButtonComponent) => ({\r\n  props: {\r\n    color: 'blue',\r\n    label: 'Blue Button'\r\n  },\r\n})"
             },
             {
                 "name": "Checkbox",
@@ -374,6 +384,16 @@
                 "defaultValue": "Template.bind({})"
             },
             {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/old/Buttons1/AllButton.stories1.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
                 "name": "DefaultSelect",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -384,14 +404,14 @@
                 "defaultValue": "Template.bind({})"
             },
             {
-                "name": "environment",
+                "name": "Disabled",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/environments/environment.ts",
+                "file": "src/stories/old/Buttons1/AllButton.stories1.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "object",
-                "defaultValue": "{\n  production: false\n}"
+                "type": "Story<ButtonComponent>",
+                "defaultValue": "(args: ButtonComponent) => ({\r\n  props: {\r\n    disabled: true,\r\n    label: 'Disabled'\r\n  },\r\n})"
             },
             {
                 "name": "environment",
@@ -404,10 +424,40 @@
                 "defaultValue": "{\n  production: true\n}"
             },
             {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/environments/environment.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n  production: false\n}"
+            },
+            {
+                "name": "Green",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/old/Buttons1/AllButton.stories1.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<ButtonComponent>",
+                "defaultValue": "(args: ButtonComponent) => ({\r\n  props: {\r\n    color: 'green',\r\n    label: 'Green Button'\r\n  },\r\n})"
+            },
+            {
+                "name": "Hover",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/old/Buttons1/AllButton.stories1.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<ButtonComponent>",
+                "defaultValue": "(args: ButtonComponent) => ({\r\n  props: {\r\n    active: true,\r\n    label: 'Hover'\r\n  },\r\n})"
+            },
+            {
                 "name": "Input",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/Input.stories.ts",
+                "file": "src/stories/old/Input.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -417,7 +467,7 @@
                 "name": "InputWithLabel",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/InputWithLabel.stories.ts",
+                "file": "src/stories/old/InputWithLabel.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -427,11 +477,31 @@
                 "name": "Label",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/Label.stories.ts",
+                "file": "src/stories/old/Label.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
                 "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Large",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/old/Buttons1/AllButton.stories1.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Loading",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/old/Buttons1/AllButton.stories1.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<ButtonComponent>",
+                "defaultValue": "(args: ButtonComponent) => ({\r\n  props: {\r\n    label: 'Loading',\r\n    isLoading: true\r\n  },\r\n})"
             },
             {
                 "name": "LoggedIn",
@@ -472,6 +542,16 @@
                 "deprecationMessage": "",
                 "type": "",
                 "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Medium",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/old/Buttons1/AllButton.stories1.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<ButtonComponent>",
+                "defaultValue": "(args: ButtonComponent) => ({\r\n  props: {\r\n    size: 'medium',\r\n    label: 'Medium'\r\n  },\r\n})"
             },
             {
                 "name": "MultipleSelect",
@@ -484,6 +564,26 @@
                 "defaultValue": "Template.bind({})"
             },
             {
+                "name": "Properties",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/old/Buttons1/Button.stories1.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Red",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/old/Buttons1/AllButton.stories1.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<ButtonComponent>",
+                "defaultValue": "(args: ButtonComponent) => ({\r\n  props: {\r\n    color: 'red',\r\n    label: 'Red Button'\r\n  },\r\n})"
+            },
+            {
                 "name": "require",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -491,6 +591,16 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "literal type"
+            },
+            {
+                "name": "Small",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/old/Buttons1/AllButton.stories1.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<ButtonComponent>",
+                "defaultValue": "(args: ButtonComponent) => ({\r\n  props: {\r\n    size: 'small',\r\n    label: 'Small'\r\n  },\r\n})"
             },
             {
                 "name": "Template",
@@ -516,17 +626,7 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/Button.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story<ButtonComponent>",
-                "defaultValue": "(args: ButtonComponent) => ({\r\n  props: args,\r\n  template: `<mrx-button\r\n                size=\"${args.size}\"\r\n                label=\"${args.label}\"\r\n                color=\"${args.color}\"\r\n                [outline]=\"${args.outline}\"\r\n                [iconOnly]=\"${args.iconOnly}\"\r\n             >Click</mrx-button>`\r\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/Input.stories.ts",
+                "file": "src/stories/old/Input.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<InputComponent>",
@@ -536,7 +636,7 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/InputWithLabel.stories.ts",
+                "file": "src/stories/old/InputWithLabel.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<InputWithLabelComponent>",
@@ -546,7 +646,7 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/Label.stories.ts",
+                "file": "src/stories/old/Label.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<LabelComponent>",
@@ -566,11 +666,11 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/form/input-select/Select.stories.ts",
+                "file": "src/stories/form/input-checkbox/Checkbox.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Story<InputSelectComponent>",
-                "defaultValue": "(args: InputSelectComponent) => ({\r\n  props: args,\r\n  template: `<mrx-input-select\r\n                [(ngModel)]=\"selected\"\r\n                label=\"${args.label}\"\r\n                [items]=\"items\"\r\n                bindLabel=\"${args.bindLabel}\"\r\n                bindValue=\"${args.bindValue}\"\r\n                [multiple]=\"false\"\r\n                [disabled]=\"${args.disabled}\"\r\n                [disabledFromDisplay]=\"${args.disabledFromDisplay}\"\r\n                [isBottomLabel]=\"${args.isBottomLabel}\"\r\n              ></mrx-input-select>\r\n`,\r\n})"
+                "type": "Story<InputCheckboxComponent>",
+                "defaultValue": "(args: InputCheckboxComponent) => ({\r\n  props: args,\r\n  template: `<mrx-input-checkbox placeholder=\"${args.placeholder}\" label=\"${args.label}\" tooltip=\"${args.tooltip}\"></mrx-input-checkbox>`\r\n})"
             },
             {
                 "name": "Template",
@@ -580,17 +680,37 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<InputDatetimeComponent>",
-                "defaultValue": "(args: InputDatetimeComponent) => ({\r\n  props: args,\r\n  template: `<mrx-input-datetime\r\n                (changed)=\"changed\"\r\n\r\n                dateFormat=\"${args.dateFormat}\"\r\n                timeFormat=\"${args.timeFormat}\"\r\n                startDate=\"${args.startDate}\"\r\n                minDate=\"${args.minDate}\"\r\n                maxDate=\"${args.maxDate}\"\r\n                [timepicker]=\"${args.timepicker}\"\r\n                [rangeMode]=\"${args.rangeMode}\"\r\n                \r\n                size=\"${args.size}\"\r\n                container=\"${args.container}\"\r\n                customClasses=\"${args.customClasses}\"\r\n                placeholder=\"${args.placeholder}\"\r\n                name=\"${args.name}\"\r\n                mask=\"${args.mask}\"\r\n                [required]=\"${args.required}\"\r\n                [disabled]=\"${args.disabled}\"\r\n                \r\n                label=\"${args.label}\"\r\n                tooltip=\"${args.tooltip}\"\r\n                [isBottomLabel]=\"${args.isBottomLabel}\"\r\n             ></mrx-input-datetime>`\r\n})"
+                "defaultValue": "(args: InputDatetimeComponent) => ({\r\n  props: args,\r\n  template: `<mrx-input-datetime\r\n                [(ngModel)]=\"startDate\"\r\n                minDate=\"${args.minDate}\"\r\n                maxDate=\"${args.maxDate}\"\r\n                dateFormat=\"${args.dateFormat}\"\r\n                timeFormat=\"${args.timeFormat}\"\r\n                [timepicker]=\"${args.timepicker}\"\r\n                [rangeMode]=\"${args.rangeMode}\"\r\n                \r\n                size=\"${args.size}\"\r\n                customClasses=\"${args.customClasses}\"\r\n                placeholder=\"${args.placeholder}\"\r\n                name=\"${args.name}\"\r\n                mask=\"${args.mask}\"\r\n                [required]=\"${args.required}\"\r\n                [disabled]=\"${args.disabled}\"\r\n                \r\n                label=\"${args.label}\"\r\n                labelClass=\"${args.labelClass}\"\r\n                extraClass=\"${args.extraClass}\"\r\n                tooltip=\"${args.tooltip}\"\r\n                [requiredHidden]=\"${args.requiredHidden}\"\r\n                [tooltipVisible]=\"${args.tooltipVisible}\"\r\n                [tooltipInitiallyVisible]=\"${args.tooltipInitiallyVisible}\"\r\n                [isBottomLabel]=\"${args.isBottomLabel}\"\r\n                [labelRequiredHidden]=\"${args.labelRequiredHidden}\"\r\n            ></mrx-input-datetime>`,\r\n})"
             },
             {
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/form/input-checkbox/Checkbox.stories.ts",
+                "file": "src/stories/form/input-select/Select.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Story<InputCheckboxComponent>",
-                "defaultValue": "(args: InputCheckboxComponent) => ({\r\n  props: args,\r\n  template: `<mrx-input-checkbox placeholder=\"${args.placeholder}\" label=\"${args.label}\" tooltip=\"${args.tooltip}\"></mrx-input-checkbox>`\r\n})"
+                "type": "Story<InputSelectComponent>",
+                "defaultValue": "(args: InputSelectComponent) => ({\r\n  props: args,\r\n  template: `<mrx-input-select\r\n                [(ngModel)]=\"selected\"\r\n                (changed)=\"onChange\"\r\n                label=\"${args.label}\"\r\n                [items]=\"items\"\r\n                bindLabel=\"${args.bindLabel}\"\r\n                bindValue=\"${args.bindValue}\"\r\n                [multiple]=\"false\"\r\n                [disabled]=\"${args.disabled}\"\r\n                [disabledFromDisplay]=\"${args.disabledFromDisplay}\"\r\n                [isBottomLabel]=\"${args.isBottomLabel}\"\r\n              ></mrx-input-select>\r\n`,\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/old/Buttons1/Button.stories1.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<ButtonComponent>",
+                "defaultValue": "(args: ButtonComponent) => ({\r\n  props: args\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/old/Buttons1/AllButton.stories1.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<ButtonComponent>",
+                "defaultValue": "(args: ButtonComponent) => ({\r\n  props: args,\r\n})"
             },
             {
                 "name": "themesObj",
@@ -601,32 +721,182 @@
                 "deprecationMessage": "",
                 "type": "object",
                 "defaultValue": "{\r\n    default: 'default',\r\n    list: [\r\n        { name: 'default', class: ['page-wrapper', 'default-theme'], color: '#00aced' },\r\n        { name: 'red', class: ['page-wrapper', 'red-theme'], color: 'red' },\r\n    ],\r\n}"
+            },
+            {
+                "name": "themesObj",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "storybook-static/assets/themes/index.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\r\n    default: 'default',\r\n    list: [\r\n        { name: 'default', class: ['page-wrapper', 'default-theme'], color: '#00aced' },\r\n        { name: 'red', class: ['page-wrapper', 'red-theme'], color: 'red' },\r\n    ],\r\n}"
+            },
+            {
+                "name": "WithIcon",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/old/Buttons1/AllButton.stories1.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<ButtonComponent>",
+                "defaultValue": "(args: ButtonComponent) => ({\r\n  props: {\r\n    label: 'WithIcon',\r\n    isLoading: false,\r\n    icon: `\r\n      <svg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg' class='stroke'>\r\n              <path d='M20 12H4' stroke='#282828' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/>\r\n              <path d='M12 4V20' stroke='#282828' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/>\r\n             </svg>\r\n    `\r\n  },\r\n})"
+            },
+            {
+                "name": "WithIconLoading",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/old/Buttons1/AllButton.stories1.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<ButtonComponent>",
+                "defaultValue": "(args: ButtonComponent) => ({\r\n  props: {\r\n    label: 'Loading',\r\n    isLoading: true,\r\n    icon: `\r\n      <svg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg' class='stroke'>\r\n              <path d='M20 12H4' stroke='#282828' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/>\r\n              <path d='M12 4V20' stroke='#282828' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/>\r\n             </svg>\r\n    `\r\n  },\r\n})"
             }
         ],
         "functions": [],
         "typealiases": [],
         "enumerations": [],
         "groupedVariables": {
-            "src/stories/Button.stories.ts": [
+            "src/stories/old/Buttons1/AllButton.stories1.ts": [
                 {
-                    "name": "Button",
+                    "name": "Active",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/stories/Button.stories.ts",
+                    "file": "src/stories/old/Buttons1/AllButton.stories1.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<ButtonComponent>",
+                    "defaultValue": "(args: ButtonComponent) => ({\r\n  props: {\r\n    active: true,\r\n    label: 'Active'\r\n  },\r\n})"
+                },
+                {
+                    "name": "Blue",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/old/Buttons1/AllButton.stories1.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<ButtonComponent>",
+                    "defaultValue": "(args: ButtonComponent) => ({\r\n  props: {\r\n    color: 'blue',\r\n    label: 'Blue Button'\r\n  },\r\n})"
+                },
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/old/Buttons1/AllButton.stories1.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
                     "defaultValue": "Template.bind({})"
                 },
                 {
-                    "name": "Template",
+                    "name": "Disabled",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/stories/Button.stories.ts",
+                    "file": "src/stories/old/Buttons1/AllButton.stories1.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story<ButtonComponent>",
-                    "defaultValue": "(args: ButtonComponent) => ({\r\n  props: args,\r\n  template: `<mrx-button\r\n                size=\"${args.size}\"\r\n                label=\"${args.label}\"\r\n                color=\"${args.color}\"\r\n                [outline]=\"${args.outline}\"\r\n                [iconOnly]=\"${args.iconOnly}\"\r\n             >Click</mrx-button>`\r\n})"
+                    "defaultValue": "(args: ButtonComponent) => ({\r\n  props: {\r\n    disabled: true,\r\n    label: 'Disabled'\r\n  },\r\n})"
+                },
+                {
+                    "name": "Green",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/old/Buttons1/AllButton.stories1.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<ButtonComponent>",
+                    "defaultValue": "(args: ButtonComponent) => ({\r\n  props: {\r\n    color: 'green',\r\n    label: 'Green Button'\r\n  },\r\n})"
+                },
+                {
+                    "name": "Hover",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/old/Buttons1/AllButton.stories1.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<ButtonComponent>",
+                    "defaultValue": "(args: ButtonComponent) => ({\r\n  props: {\r\n    active: true,\r\n    label: 'Hover'\r\n  },\r\n})"
+                },
+                {
+                    "name": "Large",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/old/Buttons1/AllButton.stories1.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Loading",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/old/Buttons1/AllButton.stories1.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<ButtonComponent>",
+                    "defaultValue": "(args: ButtonComponent) => ({\r\n  props: {\r\n    label: 'Loading',\r\n    isLoading: true\r\n  },\r\n})"
+                },
+                {
+                    "name": "Medium",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/old/Buttons1/AllButton.stories1.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<ButtonComponent>",
+                    "defaultValue": "(args: ButtonComponent) => ({\r\n  props: {\r\n    size: 'medium',\r\n    label: 'Medium'\r\n  },\r\n})"
+                },
+                {
+                    "name": "Red",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/old/Buttons1/AllButton.stories1.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<ButtonComponent>",
+                    "defaultValue": "(args: ButtonComponent) => ({\r\n  props: {\r\n    color: 'red',\r\n    label: 'Red Button'\r\n  },\r\n})"
+                },
+                {
+                    "name": "Small",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/old/Buttons1/AllButton.stories1.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<ButtonComponent>",
+                    "defaultValue": "(args: ButtonComponent) => ({\r\n  props: {\r\n    size: 'small',\r\n    label: 'Small'\r\n  },\r\n})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/old/Buttons1/AllButton.stories1.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<ButtonComponent>",
+                    "defaultValue": "(args: ButtonComponent) => ({\r\n  props: args,\r\n})"
+                },
+                {
+                    "name": "WithIcon",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/old/Buttons1/AllButton.stories1.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<ButtonComponent>",
+                    "defaultValue": "(args: ButtonComponent) => ({\r\n  props: {\r\n    label: 'WithIcon',\r\n    isLoading: false,\r\n    icon: `\r\n      <svg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg' class='stroke'>\r\n              <path d='M20 12H4' stroke='#282828' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/>\r\n              <path d='M12 4V20' stroke='#282828' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/>\r\n             </svg>\r\n    `\r\n  },\r\n})"
+                },
+                {
+                    "name": "WithIconLoading",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/old/Buttons1/AllButton.stories1.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<ButtonComponent>",
+                    "defaultValue": "(args: ButtonComponent) => ({\r\n  props: {\r\n    label: 'Loading',\r\n    isLoading: true,\r\n    icon: `\r\n      <svg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg' class='stroke'>\r\n              <path d='M20 12H4' stroke='#282828' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/>\r\n              <path d='M12 4V20' stroke='#282828' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/>\r\n             </svg>\r\n    `\r\n  },\r\n})"
                 }
             ],
             "src/stories/form/input-checkbox/Checkbox.stories.ts": [
@@ -691,7 +961,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story<InputDatetimeComponent>",
-                    "defaultValue": "(args: InputDatetimeComponent) => ({\r\n  props: args,\r\n  template: `<mrx-input-datetime\r\n                (changed)=\"changed\"\r\n\r\n                dateFormat=\"${args.dateFormat}\"\r\n                timeFormat=\"${args.timeFormat}\"\r\n                startDate=\"${args.startDate}\"\r\n                minDate=\"${args.minDate}\"\r\n                maxDate=\"${args.maxDate}\"\r\n                [timepicker]=\"${args.timepicker}\"\r\n                [rangeMode]=\"${args.rangeMode}\"\r\n                \r\n                size=\"${args.size}\"\r\n                container=\"${args.container}\"\r\n                customClasses=\"${args.customClasses}\"\r\n                placeholder=\"${args.placeholder}\"\r\n                name=\"${args.name}\"\r\n                mask=\"${args.mask}\"\r\n                [required]=\"${args.required}\"\r\n                [disabled]=\"${args.disabled}\"\r\n                \r\n                label=\"${args.label}\"\r\n                tooltip=\"${args.tooltip}\"\r\n                [isBottomLabel]=\"${args.isBottomLabel}\"\r\n             ></mrx-input-datetime>`\r\n})"
+                    "defaultValue": "(args: InputDatetimeComponent) => ({\r\n  props: args,\r\n  template: `<mrx-input-datetime\r\n                [(ngModel)]=\"startDate\"\r\n                minDate=\"${args.minDate}\"\r\n                maxDate=\"${args.maxDate}\"\r\n                dateFormat=\"${args.dateFormat}\"\r\n                timeFormat=\"${args.timeFormat}\"\r\n                [timepicker]=\"${args.timepicker}\"\r\n                [rangeMode]=\"${args.rangeMode}\"\r\n                \r\n                size=\"${args.size}\"\r\n                customClasses=\"${args.customClasses}\"\r\n                placeholder=\"${args.placeholder}\"\r\n                name=\"${args.name}\"\r\n                mask=\"${args.mask}\"\r\n                [required]=\"${args.required}\"\r\n                [disabled]=\"${args.disabled}\"\r\n                \r\n                label=\"${args.label}\"\r\n                labelClass=\"${args.labelClass}\"\r\n                extraClass=\"${args.extraClass}\"\r\n                tooltip=\"${args.tooltip}\"\r\n                [requiredHidden]=\"${args.requiredHidden}\"\r\n                [tooltipVisible]=\"${args.tooltipVisible}\"\r\n                [tooltipInitiallyVisible]=\"${args.tooltipInitiallyVisible}\"\r\n                [isBottomLabel]=\"${args.isBottomLabel}\"\r\n                [labelRequiredHidden]=\"${args.labelRequiredHidden}\"\r\n            ></mrx-input-datetime>`,\r\n})"
                 }
             ],
             "src/stories/form/input-select/Select.stories.ts": [
@@ -713,19 +983,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story<InputSelectComponent>",
-                    "defaultValue": "(args: InputSelectComponent) => ({\r\n  props: args,\r\n  template: `<mrx-input-select\r\n                [(ngModel)]=\"selected\"\r\n                label=\"${args.label}\"\r\n                [items]=\"items\"\r\n                bindLabel=\"${args.bindLabel}\"\r\n                bindValue=\"${args.bindValue}\"\r\n                [multiple]=\"false\"\r\n                [disabled]=\"${args.disabled}\"\r\n                [disabledFromDisplay]=\"${args.disabledFromDisplay}\"\r\n                [isBottomLabel]=\"${args.isBottomLabel}\"\r\n              ></mrx-input-select>\r\n`,\r\n})"
-                }
-            ],
-            "src/environments/environment.ts": [
-                {
-                    "name": "environment",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/environments/environment.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "object",
-                    "defaultValue": "{\n  production: false\n}"
+                    "defaultValue": "(args: InputSelectComponent) => ({\r\n  props: args,\r\n  template: `<mrx-input-select\r\n                [(ngModel)]=\"selected\"\r\n                (changed)=\"onChange\"\r\n                label=\"${args.label}\"\r\n                [items]=\"items\"\r\n                bindLabel=\"${args.bindLabel}\"\r\n                bindValue=\"${args.bindValue}\"\r\n                [multiple]=\"false\"\r\n                [disabled]=\"${args.disabled}\"\r\n                [disabledFromDisplay]=\"${args.disabledFromDisplay}\"\r\n                [isBottomLabel]=\"${args.isBottomLabel}\"\r\n              ></mrx-input-select>\r\n`,\r\n})"
                 }
             ],
             "src/environments/environment.prod.ts": [
@@ -740,12 +998,24 @@
                     "defaultValue": "{\n  production: true\n}"
                 }
             ],
-            "src/stories/Input.stories.ts": [
+            "src/environments/environment.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/environments/environment.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n  production: false\n}"
+                }
+            ],
+            "src/stories/old/Input.stories.ts": [
                 {
                     "name": "Input",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/stories/Input.stories.ts",
+                    "file": "src/stories/old/Input.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
@@ -755,19 +1025,19 @@
                     "name": "Template",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/stories/Input.stories.ts",
+                    "file": "src/stories/old/Input.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story<InputComponent>",
                     "defaultValue": "(args: InputComponent) => ({\r\n  props: args,\r\n  template: `<mrx-input placeholder=\"${args.placeholder}\" [maxlength]=\"${args.maxlength}\"></mrx-input>`\r\n})"
                 }
             ],
-            "src/stories/InputWithLabel.stories.ts": [
+            "src/stories/old/InputWithLabel.stories.ts": [
                 {
                     "name": "InputWithLabel",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/stories/InputWithLabel.stories.ts",
+                    "file": "src/stories/old/InputWithLabel.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
@@ -777,19 +1047,19 @@
                     "name": "Template",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/stories/InputWithLabel.stories.ts",
+                    "file": "src/stories/old/InputWithLabel.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story<InputWithLabelComponent>",
                     "defaultValue": "(args: InputWithLabelComponent) => ({\r\n  props: args,\r\n  template: `<mrx-input-with-label\r\n                placeholder=\"${args.placeholder}\"\r\n                label=\"${args.label}\"\r\n                [maxlength]=\"${args.maxlength}\"\r\n             ></mrx-input-with-label>`\r\n})"
                 }
             ],
-            "src/stories/Label.stories.ts": [
+            "src/stories/old/Label.stories.ts": [
                 {
                     "name": "Label",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/stories/Label.stories.ts",
+                    "file": "src/stories/old/Label.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
@@ -799,7 +1069,7 @@
                     "name": "Template",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/stories/Label.stories.ts",
+                    "file": "src/stories/old/Label.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story<LabelComponent>",
@@ -892,12 +1162,46 @@
                     "defaultValue": "(args: InputSelectComponent) => ({\r\n  props: {\r\n    ...args\r\n  },\r\n  template: `<mrx-input-select\r\n                [(ngModel)]=\"selected\"\r\n                (changed)=\"changed\"\r\n                label=\"${args.label}\"\r\n                [items]=\"items\"\r\n                bindLabel=\"${args.bindLabel}\"\r\n                bindValue=\"${args.bindValue}\"\r\n                [multiple]=\"true\"\r\n                [disabled]=\"${args.disabled}\"\r\n                [disabledFromDisplay]=\"${args.disabledFromDisplay}\"\r\n                [isBottomLabel]=\"${args.isBottomLabel}\"\r\n            ></mrx-input-select>`,\r\n})"
                 }
             ],
+            "src/stories/old/Buttons1/Button.stories1.ts": [
+                {
+                    "name": "Properties",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/old/Buttons1/Button.stories1.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/old/Buttons1/Button.stories1.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<ButtonComponent>",
+                    "defaultValue": "(args: ButtonComponent) => ({\r\n  props: args\r\n})"
+                }
+            ],
             "src/assets/themes/index.ts": [
                 {
                     "name": "themesObj",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "src/assets/themes/index.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\r\n    default: 'default',\r\n    list: [\r\n        { name: 'default', class: ['page-wrapper', 'default-theme'], color: '#00aced' },\r\n        { name: 'red', class: ['page-wrapper', 'red-theme'], color: 'red' },\r\n    ],\r\n}"
+                }
+            ],
+            "storybook-static/assets/themes/index.ts": [
+                {
+                    "name": "themesObj",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "storybook-static/assets/themes/index.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "object",
@@ -962,86 +1266,6 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "environment",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/Button.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Button",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/Button.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Template",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/Input.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Input",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/Input.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Template",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/InputWithLabel.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "InputWithLabel",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/InputWithLabel.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Template",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/Label.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Label",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/Label.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Template",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
@@ -1127,6 +1351,226 @@
                 "status": "low"
             },
             {
+                "filePath": "src/stories/old/Buttons1/AllButton.stories1.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Active",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/old/Buttons1/AllButton.stories1.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Blue",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/old/Buttons1/AllButton.stories1.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Default",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/old/Buttons1/AllButton.stories1.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Disabled",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/old/Buttons1/AllButton.stories1.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Green",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/old/Buttons1/AllButton.stories1.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Hover",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/old/Buttons1/AllButton.stories1.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Large",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/old/Buttons1/AllButton.stories1.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Loading",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/old/Buttons1/AllButton.stories1.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Medium",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/old/Buttons1/AllButton.stories1.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Red",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/old/Buttons1/AllButton.stories1.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Small",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/old/Buttons1/AllButton.stories1.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/old/Buttons1/AllButton.stories1.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "WithIcon",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/old/Buttons1/AllButton.stories1.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "WithIconLoading",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/old/Buttons1/Button.stories1.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Properties",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/old/Buttons1/Button.stories1.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/old/Input.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Input",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/old/Input.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/old/InputWithLabel.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "InputWithLabel",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/old/InputWithLabel.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/old/Label.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Label",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/old/Label.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
                 "filePath": "src/test.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
@@ -1142,6 +1586,16 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "require",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "storybook-static/assets/themes/index.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "themesObj",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"

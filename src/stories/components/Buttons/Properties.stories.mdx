@@ -1,0 +1,33 @@
+import {ArgsTable, Canvas, Meta, Story} from '@storybook/addon-docs';
+import {ButtonComponent, ButtonModule} from "myrtex-lib";
+import {moduleMetadata} from "@storybook/angular";
+import themes from "../../assets/themes";
+import args from "./args";
+
+export const Template = (args) => ({ props: args });
+
+<Meta
+    title="Components/Buttons"
+    component={ButtonComponent}
+    parameters={{
+        themes: themes
+    }}
+    decorators={[
+        moduleMetadata({ declarations: [], imports: [ButtonModule] })]}
+    argTypes={{ ...args, mrxClick: { action: 'mrxClick' } }}
+/>
+
+# My Component!
+
+<Canvas>
+    <Story
+        name="Properties"
+        args={{
+            label: 'Button',
+        }}
+    >
+        {Template.bind({})}
+    </Story>
+</Canvas>
+
+<ArgsTable story="Properties" />

@@ -1,7 +1,8 @@
 import { Meta, Story } from "@storybook/angular/types-6-0";
 import { componentWrapperDecorator, moduleMetadata } from "@storybook/angular";
 import { InputDatetimeComponent, InputDatetimeModule } from "myrtex-lib";
-import themes from '../../themes'
+import themes from '../../assets/themes'
+import { FormsModule } from "@angular/forms";
 
 export default {
   title: 'FORM/Datetime',
@@ -13,40 +14,40 @@ export default {
   decorators: [
     moduleMetadata({
       declarations: [],
-      imports: [InputDatetimeModule],
+      imports: [InputDatetimeModule, FormsModule],
     }),
-    componentWrapperDecorator((story) => ` <div style="height: 400px">${story}</div>`)
+    componentWrapperDecorator((story) => `${story}`)
   ],
   argTypes: {
-    onChange: {
-      action: `changed`,
-      table: {
-        category: 'Outputs',
-        type: { summary: 'Function' },
-        defaultValue: { summary: 'Function' },
-      },
-      control: {
-        type: 'string',
-      },
-    },
-  },
+    onChange: { action: 'changed' }
+  }
+  // argTypes: {
+  //   onChange: {
+  //     action: `changed`,
+  //     table: {
+  //       category: 'Outputs',
+  //       type: { summary: 'Function' },
+  //       defaultValue: { summary: 'Function' },
+  //     },
+  //     control: {
+  //       type: 'string',
+  //     },
+  //   },
+  // },
 } as Meta;
 
 const Template: Story<InputDatetimeComponent> = (args: InputDatetimeComponent) => ({
   props: args,
   template: `<mrx-input-datetime
-                (changed)="changed"
-
-                dateFormat="${args.dateFormat}"
-                timeFormat="${args.timeFormat}"
-                startDate="${args.startDate}"
+                [(ngModel)]="startDate"
                 minDate="${args.minDate}"
                 maxDate="${args.maxDate}"
+                dateFormat="${args.dateFormat}"
+                timeFormat="${args.timeFormat}"
                 [timepicker]="${args.timepicker}"
                 [rangeMode]="${args.rangeMode}"
                 
                 size="${args.size}"
-                container="${args.container}"
                 customClasses="${args.customClasses}"
                 placeholder="${args.placeholder}"
                 name="${args.name}"
@@ -55,19 +56,26 @@ const Template: Story<InputDatetimeComponent> = (args: InputDatetimeComponent) =
                 [disabled]="${args.disabled}"
                 
                 label="${args.label}"
+                labelClass="${args.labelClass}"
+                extraClass="${args.extraClass}"
                 tooltip="${args.tooltip}"
+                [requiredHidden]="${args.requiredHidden}"
+                [tooltipVisible]="${args.tooltipVisible}"
+                [tooltipInitiallyVisible]="${args.tooltipInitiallyVisible}"
                 [isBottomLabel]="${args.isBottomLabel}"
-             ></mrx-input-datetime>`
+                [labelRequiredHidden]="${args.labelRequiredHidden}"
+            ></mrx-input-datetime>`,
 });
 
 export const Datetime = Template.bind({});
+
 Datetime.args = {
   // SETTINGS DATETIME PICKER
-  dateFormat: '',
-  timeFormat: '',
-  startDate: '',
-  minDate: '',
-  maxDate: '',
+  dateFormat: 'dd.MM.yyyy',
+  timeFormat: 'hh:mm',
+  startDate: '16.01.2022',
+  minDate: '15.01.2022',
+  maxDate: '15.03.2022',
   timepicker: false,
   rangeMode: false,
 
@@ -92,6 +100,36 @@ Datetime.args = {
   isBottomLabel: false,
   labelRequiredHidden: false,
 };
+
+Datetime.argTypes = {
+  startDate: {
+    table: {
+      category: 'Dates',
+    },
+    control: {
+      type: 'text',
+    },
+    defaultValue: ''
+  },
+  minDate: {
+    table: {
+      category: 'Dates',
+    },
+    control: {
+      type: 'text',
+    },
+    defaultValue: ''
+  },
+  maxDate: {
+    table: {
+      category: 'Dates',
+    },
+    control: {
+      type: 'text',
+    },
+    defaultValue: ''
+  }
+}
 // SETTINGS DATETIME PICKER
 // @Input() public dateFormat: string = 'dd.MM.yyyy';
 // @Input() public timeFormat: string = 'HH:mm';

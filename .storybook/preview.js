@@ -1,9 +1,9 @@
 import { setCompodocJson } from "@storybook/addon-docs/angular";
 import docJson from "../documentation.json";
+
 setCompodocJson(docJson);
 
 export const parameters = {
-  actions: { argTypesRegex: "^on[A-Z].*" },
   controls: {
     matchers: {
       color: /(background|color)$/i,
@@ -12,11 +12,6 @@ export const parameters = {
   },
   docs: { inlineStories: true },
   options: {
-    // storySort: (a, b) =>
-    //   a[1].kind === b[1].kind ? 0 : a[1].id.localeCompare(b[1].id, undefined, { numeric: true }),
-    // storySort: {
-    //   order: [['Label', 'Input', 'Input With Label'], 'Button'],
-    // },
     storySort: (a, b) => {
       // Sort function to sort stories based on a config file
       // Can handle sorting up to one level deep
@@ -26,18 +21,21 @@ export const parameters = {
       // The order in which we want stories to appear
       const config = [
         {
-          category: 'Form',
-          order: [
-            'Label',
-            'Input',
-            'Input With Label',
-            'Checkbox'
-          ]
+          category: 'Components/Form',
+            order: [
+                'Label',
+                'Input',
+                'Input With Label'
+            ]
         },
-        {
-          category: 'Components',
-          order: ['Button'],
-        },
+          {
+              category: 'Components/Buttons1',
+              order: [
+                  'Overwrite',
+                  'Properties',
+                  'All-stories'
+              ]
+          },
       ];
 
       // assuming storybook uses / to separate everything

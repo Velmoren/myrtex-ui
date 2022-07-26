@@ -1,0 +1,99 @@
+.mrx-btn {
+  &-tertiary {
+    background-color: transparent;
+    color: var(--Main2);
+    border: none;
+
+    svg {
+      color: red;
+      &.fill {
+        path {
+          fill: var(--Main2);
+          transition: 0.2s;
+        }
+
+        circle {
+          fill: var(--Main2);
+          transition: 0.2s;
+        }
+
+        &-rect {
+          rect {
+            fill: var(--Main2);
+            transition: 0.2s;
+          }
+        }
+      }
+
+      &.stroke {
+        path {
+          stroke: var(--Main2);
+          transition: 0.2s;
+        }
+
+        circle {
+          stroke: var(--Main2);
+          transition: 0.2s;
+        }
+
+        &-rect {
+          rect {
+            stroke: var(--Main2);
+            transition: 0.2s;
+          }
+        }
+      }
+    }
+
+    &:hover, &.active {
+      color: var(--Subsidiary);
+
+      svg {
+        &.fill {
+          path {
+            fill: var(--Subsidiary);
+          }
+
+          circle {
+            fill: var(--Subsidiary);
+          }
+
+          &-rect {
+            rect {
+              fill: var(--Subsidiary);
+            }
+          }
+        }
+
+        &.stroke {
+          path {
+            stroke: var(--Subsidiary);
+          }
+
+          circle {
+            stroke: var(--Subsidiary);
+          }
+
+          &-rect {
+            rect {
+              stroke: var(--Subsidiary);
+            }
+          }
+        }
+      }
+    }
+
+    //&.disabled,
+    //&:disabled,
+    //[disabled='disabled'],
+    //[disabled] {
+    //  background-color: transparent !important;
+    //  border-color: var(--Stroke) !important;
+    //  color: var(--Secondary) !important;
+    //
+    //  &:hover {
+    //    background-color: transparent;
+    //  }
+    //}
+  }
+}
