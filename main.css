@@ -1697,6 +1697,23 @@
 .tempus-dominus-widget.tempus-dominus-widget-readonly table td [data-action=togglePeriod]:hover {
   background: none;
 }
+.mrx-story--code-block-flex .innerZoomElementWrapper {
+  display: flex;
+}
+.mrx-story--alert-block {
+  display: flex;
+  border-radius: 3px;
+  padding: 16px 16px 16px 12px;
+}
+.mrx-story--alert-block.success {
+  background: #edf3ec;
+}
+.mrx-story--alert-block.warning {
+  background: #fbecdd;
+}
+.mrx-story--alert-block__icon {
+  margin-right: 10px;
+}
 .mrx-wrapper {
   padding: 20px;
 }
@@ -1705,5 +1722,978 @@
 }
 .docblock-argstable-body label {
   display: inline !important;
+}
+
+:root {
+  --Good: #F1F9F3;
+  --Attention: #FDF7DE;
+  --Warning: #FCDED4;
+  --BackgroundBlue: #D5E8F8;
+  --Stroke: #DAD5CE;
+  --Disabled: #f8f8f8;
+  --Secondary: #9F9F9F;
+  --White: #FFFFFF;
+  --Green: #60A772;
+  --DarkGreen: #277647;
+  --Yellow: #FFD415;
+  --Orange: #D57B1C;
+  --DarkOrange: #A1590D;
+  --Red: #D14114;
+  --DarkRed: #912D0F;
+  --Blue: #2E8DDE;
+  --DarkBlue: #28669D;
+  --Link: #157EFB;
+  --Link-visited: #551A8B;
+  --TooltipBG: #FBF5EE;
+  --main_shadow: 0px 1px 4px rgba(59, 67, 87, 0.1);
+  --secondary_shadow: 0px 1px 4px rgba(58, 58, 58, 0.3);
+  --myrtex-ui-primary-link: #157EFB;
+  --myrtex-ui-primary-link-hover: #157EFB;
+  --myrtex-ui-primary-link-visited: #551A8B;
+}
+.page-wrapper.absolute-theme {
+  --Main1: #1D3E6F;
+  --Main2: #FFDF6B;
+  --Subsidiary: #D0A300;
+  --Secondary: #9193AC;
+  --Bg1: #E9ECF1;
+  --Bg2: #FEF4D0;
+  --Stroke: #DAD5CE;
+  --StrokeHover: #BCB5AC;
+}
+.page-wrapper.black-green-theme {
+  --Main1: #393442;
+  --Main2: #3A8841;
+  --Subsidiary: #277647;
+  --Secondary: #8F859F;
+  --Bg1: #F4F4F4;
+  --Bg2: #F7FCFC;
+  --Stroke: #DAD5CE;
+  --StrokeHover: #BCB5AC;
+}
+.page-wrapper.blue-theme {
+  --Main1: #2C2C2C;
+  --Main2: #358FE2;
+  --Subsidiary: #2C659A;
+  --Secondary: #9DA1AB;
+  --Bg1: #F4F4F4;
+  --Bg2: #F1F6F8;
+  --Stroke: #DAD5CE;
+  --StrokeHover: #BCB5AC;
+}
+.page-wrapper.brown-theme {
+  --Main1: #3F2512;
+  --Main2: #3F2512;
+  --Subsidiary: #775942;
+  --Secondary: #777777;
+  --Bg1: #F4F4F4;
+  --Bg2: #E8E0D9;
+  --Stroke: #DAD5CE;
+  --StrokeHover: #BCB5AC;
+}
+.page-wrapper.constructor-theme {
+  --Main1: #3B4357;
+  --Main2: #2E8DDE;
+  --Subsidiary: #28669D;
+  --Secondary: #DAD5CE;
+  --Bg1: #F4F4F4;
+  --Bg2: #FAFAFA;
+  --Stroke: #DAD5CE;
+  --StrokeHover: #CDCCCA;
+}
+.page-wrapper.dark-gray-theme {
+  --Main1: #2A3143;
+  --Main2: #555A69;
+  --Subsidiary: #9DA1AB;
+  --Secondary: #DAD5CE;
+  --Bg1: #F7F7F7;
+  --Bg2: #F0F0F2;
+  --Stroke: #DAD5CE;
+}
+.page-wrapper.default-theme {
+  --Main1: #282828;
+  --Main2: #A9967D;
+  --Subsidiary: #624E33;
+  --Secondary: #9F9F9F;
+  --Bg1: #F4F4F4;
+  --Bg2: #FBF5EE;
+  --Stroke: #DAD5CE;
+  --StrokeHover: #BCB5AC;
+}
+.page-wrapper.pink-theme {
+  --Main1: #000000;
+  --Main2: #FA758D;
+  --Main3: #A9967D;
+  --Subsidiary: #CD1C11;
+  --Secondary: #838383;
+  --Bg1: #F3F3F3;
+  --Bg2: #FFF6F5;
+  --Stroke: #DAD5CE;
+  --StrokeHover: #BCB5AC;
+}
+.page-wrapper.red-theme {
+  --Main1: #170302;
+  --Main2: #E41F13;
+  --Subsidiary: #CD1C11;
+  --Secondary: #ACABAB;
+  --Bg1: #F4F4F4;
+  --Bg2: #FFF6F5;
+  --Stroke: #DAD5CE;
+  --StrokeHover: #BCB5AC;
+}
+.page-wrapper.yellow-theme {
+  --Main1: #232B55;
+  --Main2: #FFCC00;
+  --Subsidiary: #D0A300;
+  --Secondary: #9193AC;
+  --Bg1: #EAEBED;
+  --Bg2: #FEF4D0;
+  --Stroke: #DAD5CE;
+  --StrokeHover: #BCB5AC;
+}
+.page-wrapper.minfin-theme {
+  --Main1: #253E49;
+  --Main2: #0090D4;
+  --Subsidiary: #006392;
+  --Secondary: #808F96;
+  --Bg1: #EFF3F5;
+  --Bg2: #E1EFF5;
+  --Stroke: #C8D3D8;
+  --StrokeHover: #ABB7BD;
+}
+.page-wrapper.turquoise-theme {
+  --Main1: #3F504D;
+  --Main2: #0C907D;
+  --Subsidiary: #05574C;
+  --Secondary: #798F8C;
+  --Bg1: #F2F5F5;
+  --Bg2: #D8F6F2;
+  --Stroke: #D4DFDD;
+  --StrokeHover: #BFCDCA;
+}
+.page-main .common-admin__section .color-theme-edit-box-color .box .AbsoluteTheme {
+  --Main2: #FFDF6B;
+  --Subsidiary: #D0A300;
+  --Secondary: #9193AC;
+  --ThemePreview: linear-gradient(90deg, var(--Subsidiary) 33.33%, var(--Main2) 33.33%, var(--Main2) 66.66%, var(--Secondary) 66.66%);
+  background-image: var(--ThemePreview);
+}
+.page-main .common-admin__section .color-theme-edit-box-color .box .BlackGreenTheme {
+  --Main2: #3A8841;
+  --Subsidiary: #277647;
+  --Secondary: #8F859F;
+  --ThemePreview: linear-gradient(90deg, var(--Subsidiary) 33.33%, var(--Main2) 33.33%, var(--Main2) 66.66%, var(--Secondary) 66.66%);
+  background-image: var(--ThemePreview);
+}
+.page-main .common-admin__section .color-theme-edit-box-color .box .BlueTheme {
+  --Main2: #358FE2;
+  --Subsidiary: #2C659A;
+  --Secondary: #9DA1AB;
+  --ThemePreview: linear-gradient(90deg, var(--Subsidiary) 33.33%, var(--Main2) 33.33%, var(--Main2) 66.66%, var(--Secondary) 66.66%);
+  background-image: var(--ThemePreview);
+}
+.page-main .common-admin__section .color-theme-edit-box-color .box .BrownTheme {
+  --Main2: #3F2512;
+  --Subsidiary: #775942;
+  --Secondary: #777777;
+  --ThemePreview: linear-gradient(90deg, var(--Subsidiary) 33.33%, var(--Main2) 33.33%, var(--Main2) 66.66%, var(--Secondary) 66.66%);
+  background-image: var(--ThemePreview);
+}
+.page-main .common-admin__section .color-theme-edit-box-color .box .ConstructorTheme {
+  --Main1: #3B4357;
+  --Main2: #2E8DDE;
+  --Subsidiary: #28669D;
+  --ThemePreview: linear-gradient(90deg, var(--Subsidiary) 33.33%, var(--Main2) 33.33%, var(--Main2) 66.66%, var(--Secondary) 66.66%);
+  background-image: var(--ThemePreview);
+}
+.page-main .common-admin__section .color-theme-edit-box-color .box .DarkGrayTheme {
+  --Main2: #555A69;
+  --Subsidiary: #9DA1AB;
+  --Secondary: #DAD5CE;
+  --ThemePreview: linear-gradient(90deg, var(--Subsidiary) 33.33%, var(--Main2) 33.33%, var(--Main2) 66.66%, var(--Secondary) 66.66%);
+  background-image: var(--ThemePreview);
+}
+.page-main .common-admin__section .color-theme-edit-box-color .box .DefaultTheme {
+  --Main2: #A9967D;
+  --Subsidiary: #624E33;
+  --Secondary: #9F9F9F;
+  --ThemePreview: linear-gradient(90deg, var(--Subsidiary) 33.33%, var(--Main2) 33.33%, var(--Main2) 66.66%, var(--Secondary) 66.66%);
+  background-image: var(--ThemePreview);
+}
+.page-main .common-admin__section .color-theme-edit-box-color .box .PinkTheme {
+  --Main2: #FA758D;
+  --Subsidiary: #CD1C11;
+  --Secondary: #838383;
+  --ThemePreview: linear-gradient(90deg, var(--Subsidiary) 33.33%, var(--Main2) 33.33%, var(--Main2) 66.66%, var(--Secondary) 66.66%);
+  background-image: var(--ThemePreview);
+}
+.page-main .common-admin__section .color-theme-edit-box-color .box .RedTheme {
+  --Main2: #E41F13;
+  --Subsidiary: #CD1C11;
+  --Secondary: #ACABAB;
+  --ThemePreview: linear-gradient(90deg, var(--Subsidiary) 33.33%, var(--Main2) 33.33%, var(--Main2) 66.66%, var(--Secondary) 66.66%);
+  background-image: var(--ThemePreview);
+}
+.page-main .common-admin__section .color-theme-edit-box-color .box .YellowTheme {
+  --Main2: #FFCC00;
+  --Subsidiary: #D0A300;
+  --Secondary: #9193AC;
+  --ThemePreview: linear-gradient(90deg, var(--Subsidiary) 33.33%, var(--Main2) 33.33%, var(--Main2) 66.66%, var(--Secondary) 66.66%);
+  background-image: var(--ThemePreview);
+}
+.page-main .common-admin__section .color-theme-edit-box-color .box .MinfinTheme {
+  --Main2: #0090D4;
+  --Subsidiary: #006392;
+  --Secondary: #808F96;
+  --ThemePreview: linear-gradient(90deg, var(--Subsidiary) 33.33%, var(--Main2) 33.33%, var(--Main2) 66.66%, var(--Secondary) 66.66%);
+  background-image: var(--ThemePreview);
+}
+.page-main .common-admin__section .color-theme-edit-box-color .box .TurquoiseTheme {
+  --Main2: #3F504D;
+  --Subsidiary: #05574C;
+  --Secondary: #798F8C;
+  --ThemePreview: linear-gradient(90deg, var(--Subsidiary) 33.33%, var(--Main2) 33.33%, var(--Main2) 66.66%, var(--Secondary) 66.66%);
+  background-image: var(--ThemePreview);
+}
+.mrx-btn-primary {
+  border: 1px solid var(--Main2);
+  color: var(--White);
+  background-color: var(--Main2);
+}
+.mrx-btn-primary:hover,
+.mrx-btn-primary.active {
+  background-color: var(--Subsidiary);
+  border-color: var(--Subsidiary);
+}
+.mrx-btn-primary svg.fill path {
+  fill: var(--White);
+}
+.mrx-btn-primary svg.fill circle {
+  fill: var(--White);
+}
+.mrx-btn-primary svg.fill-rect rect {
+  fill: var(--White);
+}
+.mrx-btn-primary svg.stroke path {
+  stroke: var(--White);
+}
+.mrx-btn-primary svg.stroke circle {
+  stroke: var(--White);
+}
+.mrx-btn-primary svg.stroke-rect rect {
+  stroke: #fff;
+}
+.mrx-btn-secondary {
+  background-color: transparent;
+  border: 1px solid var(--Main2);
+  color: var(--Main2);
+}
+.mrx-btn-secondary svg.fill path {
+  fill: var(--Main2);
+}
+.mrx-btn-secondary svg.fill circle {
+  fill: var(--Main2);
+}
+.mrx-btn-secondary svg.fill-rect rect {
+  fill: var(--Main2);
+}
+.mrx-btn-secondary svg.stroke path {
+  stroke: var(--Main2);
+}
+.mrx-btn-secondary svg.stroke circle {
+  stroke: var(--Main2);
+}
+.mrx-btn-secondary svg.stroke-rect rect {
+  stroke: var(--Main2);
+}
+.mrx-btn-secondary:hover,
+.mrx-btn-secondary.active {
+  background-color: var(--Subsidiary);
+  color: var(--White);
+  border-color: var(--Subsidiary);
+}
+.mrx-btn-secondary:hover svg.fill path,
+.mrx-btn-secondary.active svg.fill path {
+  fill: var(--White);
+}
+.mrx-btn-secondary:hover svg.fill circle,
+.mrx-btn-secondary.active svg.fill circle {
+  fill: var(--White);
+}
+.mrx-btn-secondary:hover svg.fill-rect rect,
+.mrx-btn-secondary.active svg.fill-rect rect {
+  fill: var(--White);
+}
+.mrx-btn-secondary:hover svg.stroke path,
+.mrx-btn-secondary.active svg.stroke path {
+  stroke: var(--White);
+}
+.mrx-btn-secondary:hover svg.stroke circle,
+.mrx-btn-secondary.active svg.stroke circle {
+  stroke: var(--White);
+}
+.mrx-btn-secondary:hover svg.stroke-rect rect,
+.mrx-btn-secondary.active svg.stroke-rect rect {
+  stroke: var(--White);
+}
+.mrx-btn-tertiary {
+  background-color: transparent;
+  color: var(--Main2);
+  border: none;
+}
+.mrx-btn-tertiary svg {
+  color: red;
+}
+.mrx-btn-tertiary svg.fill path {
+  fill: var(--Main2);
+  transition: 0.2s;
+}
+.mrx-btn-tertiary svg.fill circle {
+  fill: var(--Main2);
+  transition: 0.2s;
+}
+.mrx-btn-tertiary svg.fill-rect rect {
+  fill: var(--Main2);
+  transition: 0.2s;
+}
+.mrx-btn-tertiary svg.stroke path {
+  stroke: var(--Main2);
+  transition: 0.2s;
+}
+.mrx-btn-tertiary svg.stroke circle {
+  stroke: var(--Main2);
+  transition: 0.2s;
+}
+.mrx-btn-tertiary svg.stroke-rect rect {
+  stroke: var(--Main2);
+  transition: 0.2s;
+}
+.mrx-btn-tertiary:hover,
+.mrx-btn-tertiary.active {
+  color: var(--Subsidiary);
+}
+.mrx-btn-tertiary:hover svg.fill path,
+.mrx-btn-tertiary.active svg.fill path {
+  fill: var(--Subsidiary);
+}
+.mrx-btn-tertiary:hover svg.fill circle,
+.mrx-btn-tertiary.active svg.fill circle {
+  fill: var(--Subsidiary);
+}
+.mrx-btn-tertiary:hover svg.fill-rect rect,
+.mrx-btn-tertiary.active svg.fill-rect rect {
+  fill: var(--Subsidiary);
+}
+.mrx-btn-tertiary:hover svg.stroke path,
+.mrx-btn-tertiary.active svg.stroke path {
+  stroke: var(--Subsidiary);
+}
+.mrx-btn-tertiary:hover svg.stroke circle,
+.mrx-btn-tertiary.active svg.stroke circle {
+  stroke: var(--Subsidiary);
+}
+.mrx-btn-tertiary:hover svg.stroke-rect rect,
+.mrx-btn-tertiary.active svg.stroke-rect rect {
+  stroke: var(--Subsidiary);
+}
+.mrx-btn.disabled,
+.mrx-btn:disabled,
+.mrx-btn[disabled="disabled"],
+.mrx-btn[disabled] {
+  color: var(--Secondary) !important;
+  cursor: default;
+}
+.mrx-btn.disabled svg.fill path,
+.mrx-btn:disabled svg.fill path,
+.mrx-btn[disabled="disabled"] svg.fill path,
+.mrx-btn[disabled] svg.fill path {
+  fill: var(--Secondary) !important;
+}
+.mrx-btn.disabled svg.fill circle,
+.mrx-btn:disabled svg.fill circle,
+.mrx-btn[disabled="disabled"] svg.fill circle,
+.mrx-btn[disabled] svg.fill circle {
+  fill: var(--Secondary) !important;
+}
+.mrx-btn.disabled svg.fill-rect rect,
+.mrx-btn:disabled svg.fill-rect rect,
+.mrx-btn[disabled="disabled"] svg.fill-rect rect,
+.mrx-btn[disabled] svg.fill-rect rect {
+  fill: var(--Secondary) !important;
+}
+.mrx-btn.disabled svg.stroke path,
+.mrx-btn:disabled svg.stroke path,
+.mrx-btn[disabled="disabled"] svg.stroke path,
+.mrx-btn[disabled] svg.stroke path {
+  stroke: var(--Secondary) !important;
+}
+.mrx-btn.disabled svg.stroke circle,
+.mrx-btn:disabled svg.stroke circle,
+.mrx-btn[disabled="disabled"] svg.stroke circle,
+.mrx-btn[disabled] svg.stroke circle {
+  stroke: var(--Secondary) !important;
+}
+.mrx-btn.disabled svg.stroke-rect rect,
+.mrx-btn:disabled svg.stroke-rect rect,
+.mrx-btn[disabled="disabled"] svg.stroke-rect rect,
+.mrx-btn[disabled] svg.stroke-rect rect {
+  stroke: var(--Secondary) !important;
+}
+.mrx-btn.mrx-btn-primary.disabled,
+.mrx-btn.mrx-btn-secondary.disabled,
+.mrx-btn.mrx-btn-primary:disabled,
+.mrx-btn.mrx-btn-secondary:disabled,
+.mrx-btn.mrx-btn-primary[disabled="disabled"],
+.mrx-btn.mrx-btn-secondary[disabled="disabled"],
+.mrx-btn.mrx-btn-primary[disabled],
+.mrx-btn.mrx-btn-secondary[disabled] {
+  background-color: var(--Disabled) !important;
+  border-color: var(--Disabled) !important;
+}
+.mrx-btn.mrx-btn-primary.green {
+  background-color: var(--Green);
+  border-color: var(--Green);
+  color: var(--White);
+}
+.mrx-btn.mrx-btn-primary.green:hover {
+  background-color: var(--DarkGreen);
+  border-color: var(--DarkGreen);
+}
+.mrx-btn.mrx-btn-primary.red {
+  background-color: var(--Red);
+  border-color: var(--Red);
+  color: var(--White);
+}
+.mrx-btn.mrx-btn-primary.red:hover {
+  background-color: var(--DarkRed);
+  border-color: var(--DarkRed);
+}
+.mrx-btn.mrx-btn-primary.blue {
+  background-color: var(--Blue);
+  border-color: var(--Blue);
+  color: var(--White);
+}
+.mrx-btn.mrx-btn-primary.blue:hover {
+  background-color: var(--DarkBlue);
+  border-color: var(--DarkBlue);
+}
+.mrx-btn.mrx-btn-secondary.green {
+  background-color: transparent;
+  border-color: var(--Green);
+  color: var(--Green);
+}
+.mrx-btn.mrx-btn-secondary.green svg.fill path {
+  fill: var(--Green);
+}
+.mrx-btn.mrx-btn-secondary.green svg.fill circle {
+  fill: var(--Green);
+}
+.mrx-btn.mrx-btn-secondary.green svg.fill-rect rect {
+  fill: var(--Green);
+}
+.mrx-btn.mrx-btn-secondary.green svg.stroke path {
+  stroke: var(--Green);
+}
+.mrx-btn.mrx-btn-secondary.green svg.stroke circle {
+  stroke: var(--Green);
+}
+.mrx-btn.mrx-btn-secondary.green svg.stroke-rect rect {
+  stroke: var(--Green);
+}
+.mrx-btn.mrx-btn-secondary.green:hover,
+.mrx-btn.mrx-btn-secondary.green.active {
+  background-color: var(--Good);
+  color: var(--DarkGreen);
+  border-color: var(--DarkGreen);
+}
+.mrx-btn.mrx-btn-secondary.green:hover svg.fill path,
+.mrx-btn.mrx-btn-secondary.green.active svg.fill path {
+  fill: var(--DarkGreen);
+}
+.mrx-btn.mrx-btn-secondary.green:hover svg.fill circle,
+.mrx-btn.mrx-btn-secondary.green.active svg.fill circle {
+  fill: var(--DarkGreen);
+}
+.mrx-btn.mrx-btn-secondary.green:hover svg.fill-rect rect,
+.mrx-btn.mrx-btn-secondary.green.active svg.fill-rect rect {
+  fill: var(--DarkGreen);
+}
+.mrx-btn.mrx-btn-secondary.green:hover svg.stroke path,
+.mrx-btn.mrx-btn-secondary.green.active svg.stroke path {
+  stroke: var(--DarkGreen);
+}
+.mrx-btn.mrx-btn-secondary.green:hover svg.stroke circle,
+.mrx-btn.mrx-btn-secondary.green.active svg.stroke circle {
+  stroke: var(--DarkGreen);
+}
+.mrx-btn.mrx-btn-secondary.green:hover svg.stroke-rect rect,
+.mrx-btn.mrx-btn-secondary.green.active svg.stroke-rect rect {
+  stroke: var(--DarkGreen);
+}
+.mrx-btn.mrx-btn-secondary.red {
+  background-color: transparent;
+  border-color: var(--Red);
+  color: var(--Red);
+}
+.mrx-btn.mrx-btn-secondary.red svg.fill path {
+  fill: var(--Red);
+}
+.mrx-btn.mrx-btn-secondary.red svg.fill circle {
+  fill: var(--Red);
+}
+.mrx-btn.mrx-btn-secondary.red svg.fill-rect rect {
+  fill: var(--Red);
+}
+.mrx-btn.mrx-btn-secondary.red svg.stroke path {
+  stroke: var(--Red);
+}
+.mrx-btn.mrx-btn-secondary.red svg.stroke circle {
+  stroke: var(--Red);
+}
+.mrx-btn.mrx-btn-secondary.red svg.stroke-rect rect {
+  stroke: var(--Red);
+}
+.mrx-btn.mrx-btn-secondary.red:hover,
+.mrx-btn.mrx-btn-secondary.red.active {
+  background-color: var(--Warning);
+  color: var(--DarkRed);
+  border-color: var(--DarkRed);
+}
+.mrx-btn.mrx-btn-secondary.red:hover svg.fill path,
+.mrx-btn.mrx-btn-secondary.red.active svg.fill path {
+  fill: var(--DarkRed);
+}
+.mrx-btn.mrx-btn-secondary.red:hover svg.fill circle,
+.mrx-btn.mrx-btn-secondary.red.active svg.fill circle {
+  fill: var(--DarkRed);
+}
+.mrx-btn.mrx-btn-secondary.red:hover svg.fill-rect rect,
+.mrx-btn.mrx-btn-secondary.red.active svg.fill-rect rect {
+  fill: var(--DarkRed);
+}
+.mrx-btn.mrx-btn-secondary.red:hover svg.stroke path,
+.mrx-btn.mrx-btn-secondary.red.active svg.stroke path {
+  stroke: var(--DarkRed);
+}
+.mrx-btn.mrx-btn-secondary.red:hover svg.stroke circle,
+.mrx-btn.mrx-btn-secondary.red.active svg.stroke circle {
+  stroke: var(--DarkRed);
+}
+.mrx-btn.mrx-btn-secondary.red:hover svg.stroke-rect rect,
+.mrx-btn.mrx-btn-secondary.red.active svg.stroke-rect rect {
+  stroke: var(--DarkRed);
+}
+.mrx-btn.mrx-btn-secondary.blue {
+  background-color: transparent;
+  border-color: var(--Blue);
+  color: var(--Blue);
+}
+.mrx-btn.mrx-btn-secondary.blue svg.fill path {
+  fill: var(--Blue);
+}
+.mrx-btn.mrx-btn-secondary.blue svg.fill circle {
+  fill: var(--Blue);
+}
+.mrx-btn.mrx-btn-secondary.blue svg.fill-rect rect {
+  fill: var(--Blue);
+}
+.mrx-btn.mrx-btn-secondary.blue svg.stroke path {
+  stroke: var(--Blue);
+}
+.mrx-btn.mrx-btn-secondary.blue svg.stroke circle {
+  stroke: var(--Blue);
+}
+.mrx-btn.mrx-btn-secondary.blue svg.stroke-rect rect {
+  stroke: var(--Blue);
+}
+.mrx-btn.mrx-btn-secondary.blue:hover,
+.mrx-btn.mrx-btn-secondary.blue.active {
+  background-color: var(--BackgroundBlue);
+  color: var(--DarkBlue);
+  border-color: var(--DarkBlue);
+}
+.mrx-btn.mrx-btn-secondary.blue:hover svg.fill path,
+.mrx-btn.mrx-btn-secondary.blue.active svg.fill path {
+  fill: var(--DarkBlue);
+}
+.mrx-btn.mrx-btn-secondary.blue:hover svg.fill circle,
+.mrx-btn.mrx-btn-secondary.blue.active svg.fill circle {
+  fill: var(--DarkBlue);
+}
+.mrx-btn.mrx-btn-secondary.blue:hover svg.fill-rect rect,
+.mrx-btn.mrx-btn-secondary.blue.active svg.fill-rect rect {
+  fill: var(--DarkBlue);
+}
+.mrx-btn.mrx-btn-secondary.blue:hover svg.stroke path,
+.mrx-btn.mrx-btn-secondary.blue.active svg.stroke path {
+  stroke: var(--DarkBlue);
+}
+.mrx-btn.mrx-btn-secondary.blue:hover svg.stroke circle,
+.mrx-btn.mrx-btn-secondary.blue.active svg.stroke circle {
+  stroke: var(--DarkBlue);
+}
+.mrx-btn.mrx-btn-secondary.blue:hover svg.stroke-rect rect,
+.mrx-btn.mrx-btn-secondary.blue.active svg.stroke-rect rect {
+  stroke: var(--DarkBlue);
+}
+.mrx-btn.icon-left .icon-wrapper,
+.mrx-btn.icon-right .icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mrx-btn.icon-left .icon-wrapper svg,
+.mrx-btn.icon-right .icon-wrapper svg {
+  width: 100%;
+}
+.mrx-btn.icon-left.mrx-btn-lg .icon-wrapper,
+.mrx-btn.icon-right.mrx-btn-lg .icon-wrapper {
+  width: 24px;
+}
+.mrx-btn.icon-left.mrx-btn-lg.icon-left .icon-wrapper,
+.mrx-btn.icon-right.mrx-btn-lg.icon-left .icon-wrapper {
+  margin-right: 8px;
+}
+.mrx-btn.icon-left.mrx-btn-lg.icon-right .icon-wrapper,
+.mrx-btn.icon-right.mrx-btn-lg.icon-right .icon-wrapper {
+  margin-left: 8px;
+}
+.mrx-btn.icon-left.mrx-btn-md .icon-wrapper,
+.mrx-btn.icon-right.mrx-btn-md .icon-wrapper {
+  width: 24px;
+}
+.mrx-btn.icon-left.mrx-btn-md.icon-left .icon-wrapper,
+.mrx-btn.icon-right.mrx-btn-md.icon-left .icon-wrapper {
+  margin-right: 4px;
+}
+.mrx-btn.icon-left.mrx-btn-md.icon-right .icon-wrapper,
+.mrx-btn.icon-right.mrx-btn-md.icon-right .icon-wrapper {
+  margin-left: 4px;
+}
+.mrx-btn.icon-left.mrx-btn-sm .icon-wrapper,
+.mrx-btn.icon-right.mrx-btn-sm .icon-wrapper {
+  width: 16px;
+}
+.mrx-btn.icon-left.mrx-btn-sm.icon-left .icon-wrapper,
+.mrx-btn.icon-right.mrx-btn-sm.icon-left .icon-wrapper {
+  margin-right: 4px;
+}
+.mrx-btn.icon-left.mrx-btn-sm.icon-right .icon-wrapper,
+.mrx-btn.icon-right.mrx-btn-sm.icon-right .icon-wrapper {
+  margin-left: 4px;
+}
+.mrx-btn.icon-loading svg {
+  transform: rotate(-40deg);
+  animation-duration: 1.2s;
+  animation-name: icon-loading;
+  animation-iteration-count: infinite;
+  transition-timing-function: ease-in-out;
+}
+@keyframes icon-loading {
+  from {
+    transform: rotate(-40deg);
+  }
+  to {
+    transform: rotate(320deg);
+  }
+}
+.mrx-btn.mrx-btn-lg {
+  padding: 0 24px;
+  min-height: 48px;
+  font-size: 16px;
+  line-height: 20px;
+  min-width: 100px;
+}
+.mrx-btn.mrx-btn-md {
+  padding: 0 16px;
+  min-height: 40px;
+  font-size: 14px;
+  line-height: 16px;
+  min-width: 80px;
+}
+.mrx-btn.mrx-btn-sm {
+  padding: 0 12px;
+  min-height: 32px;
+  font-size: 12px;
+  line-height: 16px;
+  min-width: 60px;
+}
+.mrx-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+  border-radius: 4px;
+  outline: none;
+  transition: 0.2s;
+  text-align: center;
+  text-decoration: none;
+  min-width: 100px;
+}
+.mrx-checkbox input[type="checkbox"] {
+  min-height: auto;
+  position: absolute;
+  left: 0;
+  opacity: 0 !important;
+  height: 18px;
+  width: 18px;
+  margin: 0;
+  cursor: pointer;
+  z-index: 2;
+  padding: 0;
+}
+.mrx-checkbox__label {
+  margin-left: 8px;
+  line-height: 1.4;
+  font-weight: normal;
+}
+.mrx-checkbox__label--bold {
+  font-weight: bold;
+}
+.mrx-checkbox-default .mrx-checkbox__mark {
+  display: block;
+  height: 18px;
+  width: 18px;
+  min-width: 18px;
+  border: 2px solid var(--Stroke);
+  border-radius: 4px;
+  transition: 0.2s;
+  position: relative;
+}
+.mrx-checkbox-default .mrx-checkbox__mark:hover {
+  border-color: var(--Main2);
+}
+.mrx-checkbox-default input[type="checkbox"]:checked + .mrx-checkbox__mark {
+  border-color: var(--Main2);
+  background: var(--Main2);
+}
+.mrx-checkbox-default input[type="checkbox"]:checked + .mrx-checkbox__mark:after {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' width='14' height='14' viewBox='0 0 14 10'%3E%3Cdefs/%3E%3Cpath stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M12.3334 1.66663L5.00008 8.99996 1.66675 5.66663'/%3E%3C/svg%3E");
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 0;
+}
+.mrx-checkbox-default input[type="checkbox"]:disabled + .mrx-checkbox__mark {
+  border-color: var(--Stroke);
+  background: var(--Stroke);
+}
+.mrx-checkbox-default:hover .mrx-checkbox__mark {
+  border-color: var(--Main2);
+}
+.mrx-checkbox-default:hover input[type="checkbox"]:disabled + .mrx-checkbox__mark {
+  border-color: var(--Stroke);
+  background: var(--Stroke);
+}
+.mrx-checkbox-mark .mrx-checkbox__mark {
+  display: block;
+  height: 18px;
+  width: 18px;
+  min-width: 18px;
+  border: 2px solid var(--Stroke);
+  border-radius: 4px;
+  transition: 0.2s;
+  position: relative;
+}
+.mrx-checkbox-mark .mrx-checkbox__mark:hover {
+  border-color: var(--Main2);
+}
+.mrx-checkbox-mark input[type="checkbox"]:checked + .mrx-checkbox__mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mrx-checkbox-mark input[type="checkbox"]:checked + .mrx-checkbox__mark:after {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: var(--Main2);
+  border-radius: 2px;
+}
+.mrx-checkbox-mark input[type="checkbox"]:disabled + .mrx-checkbox__mark {
+  border-color: var(--Stroke);
+}
+.mrx-checkbox-mark input[type="checkbox"]:disabled + .mrx-checkbox__mark:after {
+  background-color: var(--Stroke);
+}
+.mrx-checkbox-mark:hover .mrx-checkbox__mark {
+  border-color: var(--Main2);
+}
+.mrx-checkbox-mark:hover input[type="checkbox"]:disabled + .mrx-checkbox__mark {
+  border-color: var(--Stroke);
+}
+.mrx-checkbox-mark:hover input[type="checkbox"]:disabled + .mrx-checkbox__mark:after {
+  background-color: var(--Stroke);
+}
+.mrx-checkbox-indeterminate .mrx-checkbox__mark {
+  display: block;
+  height: 18px;
+  width: 18px;
+  min-width: 18px;
+  border: 2px solid var(--Stroke);
+  border-radius: 4px;
+  transition: 0.2s;
+  position: relative;
+}
+.mrx-checkbox-indeterminate .mrx-checkbox__mark:hover {
+  border-color: var(--Main2);
+}
+.mrx-checkbox-indeterminate input[type="checkbox"]:checked + .mrx-checkbox__mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mrx-checkbox-indeterminate input[type="checkbox"]:checked + .mrx-checkbox__mark:after {
+  content: '';
+  display: block;
+  width: 6px;
+  height: 2px;
+  background-color: var(--Main2);
+  border-radius: 2px;
+}
+.mrx-checkbox-indeterminate input[type="checkbox"]:disabled + .mrx-checkbox__mark {
+  border-color: var(--Stroke);
+}
+.mrx-checkbox-indeterminate input[type="checkbox"]:disabled + .mrx-checkbox__mark:after {
+  background-color: var(--Stroke);
+}
+.mrx-checkbox-indeterminate:hover .mrx-checkbox__mark {
+  border-color: var(--Main2);
+}
+.mrx-checkbox-indeterminate:hover input[type="checkbox"]:disabled + .mrx-checkbox__mark {
+  border-color: var(--Stroke);
+}
+.mrx-checkbox-indeterminate:hover input[type="checkbox"]:disabled + .mrx-checkbox__mark:after {
+  background-color: var(--Stroke);
+}
+.mrx-checkbox__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.mrx-checkbox {
+  overflow: visible;
+  background-color: transparent;
+  cursor: pointer;
+  box-sizing: border-box;
+  position: relative;
+  display: flex !important;
+  min-height: auto !important;
+  font-size: 14px !important;
+  line-height: 120% !important;
+  font-weight: bold !important;
+  margin-bottom: 0 !important;
+}
+.mrx-tooltip-trigger {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 2px;
+  cursor: pointer;
+  padding: 3px;
+  border-radius: 30px;
+}
+.mrx-tooltip-trigger svg {
+  min-width: 16px;
+  width: 16px;
+  height: 16px;
+  z-index: 2;
+}
+.mrx-tooltip-trigger:hover {
+  background: var(--TooltipBG);
+  width: 140px;
+}
+.mrx-tooltip-trigger:hover .tooltip-help {
+  width: 120px;
+  padding: 0 5px;
+}
+.mrx-tooltip-trigger.trigger-right .tooltip-help {
+  font-size: 12px;
+  letter-spacing: -0.363636px;
+  line-height: 1;
+  font-weight: normal;
+  white-space: nowrap;
+  width: 0;
+  transition: 0.2s;
+  overflow: hidden;
+  color: var(--Main1);
+  z-index: 1;
+}
+.mrx-tooltip-trigger.trigger-right:hover .tooltip-help {
+  width: 120px;
+  padding: 0 5px;
+}
+@media screen and (max-width: 991px) {
+  .mrx-tooltip-trigger.trigger-right {
+    background: var(--TooltipBG);
+  }
+  .mrx-tooltip-trigger.trigger-right .tooltip-help {
+    width: 120px;
+    padding: 0 5px;
+  }
+}
+.mrx-tooltip-trigger.trigger-top {
+  position: relative;
+  width: 22px;
+}
+.mrx-tooltip-trigger.trigger-top::after {
+  content: "";
+  width: 22px;
+  height: 22px;
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.2s;
+  border-radius: 100%;
+}
+.mrx-tooltip-trigger.trigger-top .tooltip-help {
+  font-size: 12px;
+  letter-spacing: -0.363636px;
+  line-height: 1;
+  width: auto;
+  position: absolute;
+  left: 50%;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-50%);
+  top: -25px;
+  padding: 3px 5px !important;
+  background: var(--TooltipBG);
+  box-shadow: 0px 4px 10px rgba(58, 58, 58, 0.15);
+  border-radius: 4px;
+  z-index: 1;
+}
+.mrx-tooltip-trigger.trigger-top:hover {
+  background: transparent;
+}
+.mrx-tooltip-trigger.trigger-top:hover::after {
+  background: var(--TooltipBG);
+}
+.mrx-tooltip-trigger.trigger-top:hover .tooltip-help {
+  width: 140px;
+  opacity: 1;
+  visibility: visible;
+}
+.mrx-tooltip-content {
+  margin-top: 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 140%;
+  padding: 8px 16px;
+  margin-bottom: 6px;
+  background: var(--TooltipBG);
+  overflow: hidden;
+  font-weight: normal;
+  color: var(--Main1);
+}
+@media screen and (max-width: 567px) {
+  .mrx-tooltip-content {
+    padding: 8px 10px;
+  }
 }
 
