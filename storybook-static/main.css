@@ -1700,4 +1700,10 @@
 .mrx-wrapper {
   padding: 20px;
 }
+.page-wrapper {
+  padding: 2rem !important;
+}
+.docblock-argstable-body label {
+  display: inline !important;
+}
 

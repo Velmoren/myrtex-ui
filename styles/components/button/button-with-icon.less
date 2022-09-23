@@ -1,0 +1,51 @@
+.mrx-btn {
+  &.icon-left, &.icon-right {
+    .icon {
+      &-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        svg {
+          width: 100%;
+        }
+      }
+    }
+
+    &.mrx-btn-lg {
+      .icon-wrapper {
+        width: 24px;
+      }
+      &.icon-left .icon-wrapper {
+        margin-right: 8px;
+      }
+      &.icon-right .icon-wrapper {
+        margin-left: 8px;
+      }
+    }
+
+    &.mrx-btn-md {
+      .icon-wrapper {
+        width: 24px;
+      }
+      &.icon-left .icon-wrapper {
+        margin-right: 4px;
+      }
+      &.icon-right .icon-wrapper {
+        margin-left: 4px;
+      }
+    }
+
+    &.mrx-btn-sm {
+      .icon-wrapper {
+        width: 16px;
+      }
+      &.icon-left .icon-wrapper {
+        margin-right: 4px;
+      }
+      &.icon-right .icon-wrapper {
+        margin-left: 4px;
+      }
+    }
+  }
+}

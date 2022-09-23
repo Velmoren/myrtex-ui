@@ -37,9 +37,6 @@
               "src/styles.less",
               "node_modules/ros.grant.common/Shared/Styles/Base/Grid.less",
               "node_modules/ros.grant.common/Shared/Styles/Base/Main.less",
-              "node_modules/ros.grant.common/Shared/Styles/ThemeVariables.less",
-              "node_modules/ros.grant.common/Shared/Styles/SystemVariables.less",
-              "node_modules/ros.grant.common/Shared/Styles/CommonVariables.less",
               "node_modules/ros.grant.common/Shared/Styles/Modules/Button/Button.less",
               "node_modules/ros.grant.common/Shared/Styles/Modules/Input/Checkbox.less",
               "node_modules/ros.grant.common/Shared/Styles/Modules/Input/Switch.less",
@@ -48,7 +45,8 @@
               "node_modules/ros.grant.common/Shared/Styles/Modules/Input/CustomInput.less",
               "node_modules/ros.grant.common/Shared/Styles/Modules/Tooltip.less",
               "node_modules/ros.grant.common/Shared/Styles/Modules/СustomTooltip.less",
-              "node_modules/air-datepicker/air-datepicker.css"
+              "node_modules/air-datepicker/air-datepicker.css",
+              "styles/index.less"
             ],
             "scripts": []
           },

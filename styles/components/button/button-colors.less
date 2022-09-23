@@ -1,0 +1,279 @@
+// Цвет кнопок
+.mrx-btn {
+  &.mrx-btn-primary {
+    &.green {
+      background-color: var(--Green);
+      border-color: var(--Green);
+      color: var(--White);
+
+      &:hover {
+        background-color: var(--DarkGreen);
+        border-color: var(--DarkGreen);
+      }
+    }
+
+    &.red {
+      background-color: var(--Red);
+      border-color: var(--Red);
+      color: var(--White);
+
+      &:hover {
+        background-color: var(--DarkRed);
+        border-color: var(--DarkRed);
+      }
+    }
+
+    &.blue {
+      background-color: var(--Blue);
+      border-color: var(--Blue);
+      color: var(--White);
+
+      &:hover {
+        background-color: var(--DarkBlue);
+        border-color: var(--DarkBlue);
+      }
+    }
+  }
+
+  &.mrx-btn-secondary {
+    &.green {
+      background-color: transparent;
+      border-color: var(--Green);
+      color: var(--Green);
+
+      svg {
+        &.fill {
+          path {
+            fill: var(--Green);
+          }
+
+          circle {
+            fill: var(--Green);
+          }
+
+          &-rect {
+            rect {
+              fill: var(--Green);
+            }
+          }
+        }
+
+        &.stroke {
+          path {
+            stroke: var(--Green);
+          }
+
+          circle {
+            stroke: var(--Green);
+          }
+
+          &-rect {
+            rect {
+              stroke: var(--Green);
+            }
+          }
+        }
+      }
+
+      &:hover, &.active {
+        background-color: var(--Good);
+        color: var(--DarkGreen);
+        border-color: var(--DarkGreen);
+
+        svg {
+          &.fill {
+            path {
+              fill: var(--DarkGreen);
+            }
+
+            circle {
+              fill: var(--DarkGreen);
+            }
+
+            &-rect {
+              rect {
+                fill: var(--DarkGreen);
+              }
+            }
+          }
+
+          &.stroke {
+            path {
+              stroke: var(--DarkGreen);
+            }
+
+            circle {
+              stroke: var(--DarkGreen);
+            }
+
+            &-rect {
+              rect {
+                stroke: var(--DarkGreen);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &.red {
+      background-color: transparent;
+      border-color: var(--Red);
+      color: var(--Red);
+
+      svg {
+        &.fill {
+          path {
+            fill: var(--Red);
+          }
+
+          circle {
+            fill: var(--Red);
+          }
+
+          &-rect {
+            rect {
+              fill: var(--Red);
+            }
+          }
+        }
+
+        &.stroke {
+          path {
+            stroke: var(--Red);
+          }
+
+          circle {
+            stroke: var(--Red);
+          }
+
+          &-rect {
+            rect {
+              stroke: var(--Red);
+            }
+          }
+        }
+      }
+
+      &:hover, &.active {
+        background-color: var(--Warning);
+        color: var(--DarkRed);
+        border-color: var(--DarkRed);
+
+        svg {
+          &.fill {
+            path {
+              fill: var(--DarkRed);
+            }
+
+            circle {
+              fill: var(--DarkRed);
+            }
+
+            &-rect {
+              rect {
+                fill: var(--DarkRed);
+              }
+            }
+          }
+
+          &.stroke {
+            path {
+              stroke: var(--DarkRed);
+            }
+
+            circle {
+              stroke: var(--DarkRed);
+            }
+
+            &-rect {
+              rect {
+                stroke: var(--DarkRed);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &.blue {
+      background-color: transparent;
+      border-color: var(--Blue);
+      color: var(--Blue);
+
+      svg {
+        &.fill {
+          path {
+            fill: var(--Blue);
+          }
+
+          circle {
+            fill: var(--Blue);
+          }
+
+          &-rect {
+            rect {
+              fill: var(--Blue);
+            }
+          }
+        }
+
+        &.stroke {
+          path {
+            stroke: var(--Blue);
+          }
+
+          circle {
+            stroke: var(--Blue);
+          }
+
+          &-rect {
+            rect {
+              stroke: var(--Blue);
+            }
+          }
+        }
+      }
+
+      &:hover, &.active {
+        background-color: var(--BackgroundBlue);
+        color: var(--DarkBlue);
+        border-color: var(--DarkBlue);
+
+        svg {
+          &.fill {
+            path {
+              fill: var(--DarkBlue);
+            }
+
+            circle {
+              fill: var(--DarkBlue);
+            }
+
+            &-rect {
+              rect {
+                fill: var(--DarkBlue);
+              }
+            }
+          }
+
+          &.stroke {
+            path {
+              stroke: var(--DarkBlue);
+            }
+
+            circle {
+              stroke: var(--DarkBlue);
+            }
+
+            &-rect {
+              rect {
+                stroke: var(--DarkBlue);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
